@@ -41,7 +41,7 @@ public class EPGAdminDashboardPage {
         action = new Actions(driver);
     }
     public EPGLoginPage clickLogout(){
-        action.scrollToElement(logout).build().perform();
+//        action.scrollToElement(logout).build().perform();
         action.moveToElement(logout).build().perform();
         wait.until(ExpectedConditions.visibilityOf(logout)).click();
         return new EPGLoginPage(driver);
