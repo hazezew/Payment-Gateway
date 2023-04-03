@@ -1,0 +1,3302 @@
+[
+  {
+    "line": 14,
+    "elements": [
+      {
+        "line": 15,
+        "name": "user opened web browser and maximizes it",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7500,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user has entered EPG system URL",
+            "match": {
+              "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-03T12:48:17.684Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.ExceptionInInitializerError\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\nCaused by: java.lang.IllegalArgumentException: Unknown HttpClient factory jdk-http-client\r\n\tat org.openqa.selenium.remote.http.HttpClient$Factory.create(HttpClient.java:57)\r\n\tat org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder.\u003cclinit\u003e(HttpCommandExecutor.java:58)\r\n\t... 26 more\r\n",
+              "duration": 67852800,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.initializeDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 82932300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Add new merchant with valid and complete mandatory data",
+        "description": "",
+        "id": "merchant-management;add-new-merchant-with-valid-and-complete-mandatory-data",
+        "after": [
+          {
+            "result": {
+              "duration": 5661900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.createJiraIssue(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 9250000,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2900,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user enters \"testingteam1\" into EPG Username text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testingteam1\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user enters \"Abc@123456\" into EPG into password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abc@123456\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1400,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user clicks EPG Login button",
+            "match": {
+              "location": "LoginStepDef.userClicksEPGLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10400,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "system displays EPG Admin dashboard",
+            "match": {
+              "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "EPG user clicks Administration menu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "EPG user clicks Merchants submenu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "EPG system displays Merchants management page",
+            "match": {
+              "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2600,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "EPG user clicks on create link",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnCreateLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23000,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "EPG user click on Main Information tab",
+            "match": {
+              "location": "MerchantStepDef.epgUserClickOnMainInformationTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2400,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "EPG user enters \"newusername11\" into EPG Merchant Login text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"newusername11\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoEPGMerchantLoginTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2300,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "EPG user enters \"Abenezerwondemu\" into Merchant Name text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abenezerwondemu\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMerchantNameTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2700,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "EPG user enters \"1234\" into MCC text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMCCTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1700,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "EPG user enters \"https://abenezer.com/\" into Merchant Website Address text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://abenezer.com/\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMerchantWebsiteAddressTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2800,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "EPG user enters selects \"EN\" Payment Language dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersSelectsPaymentLanguageDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3100,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "EPG user enters \"EN\" into List Of Locals text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoListOfLocalsTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1400,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "EPG user enters \"6\" into Pan Masked Digit Count text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"6\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoPanMaskedDigitCountTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2700,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "EPG user selects the Merchant Permissions",
+            "match": {
+              "location": "MerchantStepDef.epgUserSelectsTheMerchantPermissions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "EPG user clicks on Acquirer tab for new Merchant",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnAcquirerTabForNewMerchant()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2700,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "EPG user clicks on add new Acquirer button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnAddNewAcquirerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "EPG user selects \"BunnaBankAcquirer\" from new Acquirer Name dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BunnaBankAcquirer\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsFromNewAcquirerNameDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "EPG user enters \"AB123456\" into Processing Merchant ID text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AB123456\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoProcessingMerchantIDTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "EPG user enters \"12345678\" into Terminal ID text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoTerminalIDTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "EPG user enters \"newusername\" into User Login text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"newusername\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoUserLoginTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1400,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "EPG user enters \"password\" into User Password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoUserPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "EPG user clicks on Save Acquirer button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveAcquirerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "EPG user checks Default Acquirer checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksDefaultAcquirerCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "EPG user clicks on Additional information tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Additional_information_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "EPG user checks ETB under currency list",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_ETB_under_currency_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "EPG user selects \"ETB (230)\" Default Currency dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ETB (230)\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsDefaultCurrencyDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1400,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "EPG user enters \"1\" into Number of payment attempts text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Number_of_payment_attempts_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "EPG user selects \"Version 1\" from Version of getOrderStatusExtended text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Version 1\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_from_Version_of_getOrderStatusExtended_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "EPG user selects \"Version 2\" from Version of getPTwoPStatus text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Version 2\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_from_Version_of_getP_PStatus_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "EPG user checks Use verification checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_Use_verification_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "EPG user checks External fraud control checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_External_fraud_control_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "EPG user enters \"Fraud control name\" into Name for fraud control text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fraud control name\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Name_for_fraud_control_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1400,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "EPG user checks Use name for fraud control checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_Use_name_for_fraud_control_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "EPG user enters \"1\" into Duration of displaying order information text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoDurationOfDisplayingOrderInformationTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "EPG user selects \"NO_PREFERENCE\" ThreeDSTwo Requester Challenge Indicator dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NO_PREFERENCE\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_ThreeDS_Requester_Challenge_Indicator_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "EPG user clicks on Address tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Address_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "EPG user enters \"Ethiopia\" into into Country text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ethiopia\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_Country_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "EPG user clicks on Save merchant button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveMerchantButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6400,
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "EPG user clicks logout link",
+            "match": {
+              "location": "LoginStepDef.epgUserLogsOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@MerchantManagement"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "user opened web browser and maximizes it",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7500,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user has entered EPG system URL",
+            "match": {
+              "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-03T12:48:17.683Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 68082600,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.initializeDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 82929100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 62,
+        "name": "Search and update registered merchant details",
+        "description": "",
+        "id": "merchant-management;search-and-update-registered-merchant-details",
+        "after": [
+          {
+            "result": {
+              "duration": 5755500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.createJiraIssue(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 9256600,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2100,
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "user enters \"testingteam1\" into EPG Username text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testingteam1\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5200,
+              "status": "skipped"
+            },
+            "line": 64,
+            "name": "user enters \"Abc@123456\" into EPG into password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abc@123456\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2100,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "user clicks EPG Login button",
+            "match": {
+              "location": "LoginStepDef.userClicksEPGLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "system displays EPG Admin dashboard",
+            "match": {
+              "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5800,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "EPG user clicks Administration menu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "EPG user clicks Merchants submenu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000,
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "EPG system displays Merchants management page",
+            "match": {
+              "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3600,
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "EPG user enters \"HabitamuAzezew\" into search merchant text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HabitamuAzezew\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoSearchMerchantTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2400,
+              "status": "skipped"
+            },
+            "line": 71,
+            "name": "EPG user clicks on find button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnFindButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2600,
+              "status": "skipped"
+            },
+            "line": 72,
+            "name": "EPG system displays the merchant based on merchant name",
+            "match": {
+              "location": "MerchantStepDef.epgSystemDisplaysTheMerchantBasedOnMerchantName()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2700,
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "EPG user clicks on the merchant \"HabitamuAzezew\" for update",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HabitamuAzezew\"",
+                  "offset": 32
+                }
+              ],
+              "location": "MerchantStepDef.epgUserClicksOnTheMerchantForUpdate(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "EPG user clicks on Send Payment Form tab",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSendPaymentFormTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2800,
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "EPG user enters \"https://habitamu.com/\" into Return URL after payment text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://habitamu.com/\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoReturnURLAfterPaymentTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "EPG user enters \"https://habitamu.com/\" into Return URL on error text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://habitamu.com/\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoReturnURLOnErrorTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2700,
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "EPG user clicks on Save merchant button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveMerchantButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "EPG system updates merchant details",
+            "match": {
+              "location": "MerchantStepDef.epgSystemUpdatesMerchantDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2400,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "EPG user clicks logout link",
+            "match": {
+              "location": "LoginStepDef.epgUserLogsOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@MerchantManagement"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "user opened web browser and maximizes it",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2800,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user has entered EPG system URL",
+            "match": {
+              "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-03T12:48:17.858Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 2550500,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.initializeDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 39600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "Add merchant with an already existing merchant detail",
+        "description": "",
+        "id": "merchant-management;add-merchant-with-an-already-existing-merchant-detail",
+        "after": [
+          {
+            "result": {
+              "duration": 240300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.createJiraIssue(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 364300,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "user enters \"testingteam1\" into EPG Username text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testingteam1\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1600,
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "user enters \"Abc@123456\" into EPG into password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abc@123456\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "user clicks EPG Login button",
+            "match": {
+              "location": "LoginStepDef.userClicksEPGLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 85,
+            "name": "system displays EPG Admin dashboard",
+            "match": {
+              "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 86,
+            "name": "EPG user clicks Administration menu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 87,
+            "name": "EPG user clicks Merchants submenu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "EPG system displays Merchants management page",
+            "match": {
+              "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "EPG user clicks on create link",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnCreateLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "EPG user click on Main Information tab",
+            "match": {
+              "location": "MerchantStepDef.epgUserClickOnMainInformationTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "EPG user enters \"habitamuazezew\" into EPG Merchant Login text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"habitamuazezew\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoEPGMerchantLoginTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14500,
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "EPG user enters \"HabitamuAzezew\" into Merchant Name text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HabitamuAzezew\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMerchantNameTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 93,
+            "name": "EPG user enters \"1234\" into MCC text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMCCTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "EPG user enters \"https://habitamu.com/\" into Merchant Website Address text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://habitamu.com/\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMerchantWebsiteAddressTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "EPG user enters selects \"EN\" Payment Language dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersSelectsPaymentLanguageDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "EPG user enters \"EN\" into List Of Locals text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoListOfLocalsTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 97,
+            "name": "EPG user enters \"6\" into Pan Masked Digit Count text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"6\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoPanMaskedDigitCountTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "line": 98,
+            "name": "EPG user selects the Merchant Permissions",
+            "match": {
+              "location": "MerchantStepDef.epgUserSelectsTheMerchantPermissions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 99,
+            "name": "EPG user clicks on Acquirer tab for new Merchant",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnAcquirerTabForNewMerchant()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1700,
+              "status": "skipped"
+            },
+            "line": 100,
+            "name": "EPG user clicks on add new Acquirer button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnAddNewAcquirerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 101,
+            "name": "EPG user selects \"BunnaBankAcquirer\" from new Acquirer Name dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BunnaBankAcquirer\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsFromNewAcquirerNameDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 102,
+            "name": "EPG user enters \"HAB123\" into Processing Merchant ID text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HAB123\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoProcessingMerchantIDTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 103,
+            "name": "EPG user enters \"12345678\" into Terminal ID text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12345678\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoTerminalIDTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 104,
+            "name": "EPG user enters \"username\" into User Login text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoUserLoginTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 105,
+            "name": "EPG user enters \"password\" into User Password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoUserPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "EPG user clicks on Save Acquirer button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveAcquirerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 107,
+            "name": "EPG user checks Default Acquirer checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksDefaultAcquirerCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 108,
+            "name": "EPG user clicks on Additional information tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Additional_information_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 109,
+            "name": "EPG user checks ETB under currency list",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_ETB_under_currency_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 110,
+            "name": "EPG user selects \"ETB (230)\" Default Currency dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ETB (230)\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsDefaultCurrencyDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 111,
+            "name": "EPG user enters \"1\" into Number of payment attempts text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Number_of_payment_attempts_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3700,
+              "status": "skipped"
+            },
+            "line": 112,
+            "name": "EPG user selects \"Version 1\" from Version of getOrderStatusExtended text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Version 1\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_from_Version_of_getOrderStatusExtended_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 113,
+            "name": "EPG user selects \"Version 2\" from Version of getPTwoPStatus text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Version 2\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_from_Version_of_getP_PStatus_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 114,
+            "name": "EPG user checks Use verification checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_Use_verification_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 115,
+            "name": "EPG user checks External fraud control checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_External_fraud_control_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 116,
+            "name": "EPG user enters \"Fraud control name\" into Name for fraud control text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fraud control name\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Name_for_fraud_control_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 117,
+            "name": "EPG user checks Use name for fraud control checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_Use_name_for_fraud_control_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "line": 118,
+            "name": "EPG user enters \"1\" into Duration of displaying order information text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoDurationOfDisplayingOrderInformationTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1700,
+              "status": "skipped"
+            },
+            "line": 119,
+            "name": "EPG user selects \"NO_PREFERENCE\" ThreeDSTwo Requester Challenge Indicator dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NO_PREFERENCE\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_ThreeDS_Requester_Challenge_Indicator_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 120,
+            "name": "EPG user clicks on Address tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Address_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 121,
+            "name": "EPG user enters \"Ethiopia\" into into Country text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ethiopia\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_Country_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 122,
+            "name": "EPG user clicks on Save merchant button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveMerchantButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 123,
+            "name": "EPG add merchant page displays an alert message containing \"Login already exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login already exists\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15100,
+              "status": "skipped"
+            },
+            "line": 124,
+            "name": "EPG user clicks on Close merchant button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnCloseMerchantButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "line": 125,
+            "name": "EPG user clicks logout link",
+            "match": {
+              "location": "LoginStepDef.epgUserLogsOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@MerchantManagement"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "user opened web browser and maximizes it",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user has entered EPG system URL",
+            "match": {
+              "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-03T12:48:17.859Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 2683700,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.initializeDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 22400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 127,
+        "name": "Add new merchant with all valid input value data",
+        "description": "",
+        "id": "merchant-management;add-new-merchant-with-all-valid-input-value-data",
+        "after": [
+          {
+            "result": {
+              "duration": 192500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.createJiraIssue(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 612900,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 128,
+            "name": "user enters \"testingteam1\" into EPG Username text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testingteam1\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 129,
+            "name": "user enters \"Abc@123456\" into EPG into password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abc@123456\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000,
+              "status": "skipped"
+            },
+            "line": 130,
+            "name": "user clicks EPG Login button",
+            "match": {
+              "location": "LoginStepDef.userClicksEPGLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 131,
+            "name": "system displays EPG Admin dashboard",
+            "match": {
+              "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 132,
+            "name": "EPG user clicks Administration menu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2600,
+              "status": "skipped"
+            },
+            "line": 133,
+            "name": "EPG user clicks Merchants submenu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 134,
+            "name": "EPG system displays Merchants management page",
+            "match": {
+              "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2600,
+              "status": "skipped"
+            },
+            "line": 135,
+            "name": "EPG user clicks on create link",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnCreateLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 136,
+            "name": "EPG user click on Main Information tab",
+            "match": {
+              "location": "MerchantStepDef.epgUserClickOnMainInformationTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 137,
+            "name": "EPG user enters \"username\" into EPG Merchant Login text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoEPGMerchantLoginTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 138,
+            "name": "EPG user enters \"Habitamu Azezew\" into Merchant Name text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Habitamu Azezew\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMerchantNameTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 139,
+            "name": "EPG user enters \"1234\" into MCC text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMCCTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 140,
+            "name": "EPG user enters \"https://habitamu.com/\" into Merchant Website Address text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://habitamu.com/\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMerchantWebsiteAddressTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 141,
+            "name": "EPG user enters \"hazezew@gmail.com\" into Merchant email Address(s) text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hazezew@gmail.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoMerchantEmailAddressSTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2500,
+              "status": "skipped"
+            },
+            "line": 142,
+            "name": "EPG user enters selects \"EN\" Payment Language dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 24
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersSelectsPaymentLanguageDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 143,
+            "name": "EPG user enters \"EN\" into List Of Locals text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EN\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoListOfLocalsTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 144,
+            "name": "EPG user enters \"6\" into Pan Masked Digit Count text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"6\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoPanMaskedDigitCountTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 145,
+            "name": "EPG user selects the Merchant Permissions",
+            "match": {
+              "location": "MerchantStepDef.epgUserSelectsTheMerchantPermissions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 146,
+            "name": "EPG user clicks on Acquirer tab for new Merchant",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnAcquirerTabForNewMerchant()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2800,
+              "status": "skipped"
+            },
+            "line": 147,
+            "name": "EPG user clicks on add new Acquirer button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnAddNewAcquirerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1900,
+              "status": "skipped"
+            },
+            "line": 148,
+            "name": "EPG user selects \"BunnaBankAcquirer\" from new Acquirer Name dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BunnaBankAcquirer\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsFromNewAcquirerNameDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 149,
+            "name": "EPG user enters \"HAB123\" into Processing Merchant ID text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"HAB123\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoProcessingMerchantIDTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 150,
+            "name": "EPG user enters \"123456789\" into Terminal ID text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456789\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoTerminalIDTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2700,
+              "status": "skipped"
+            },
+            "line": 151,
+            "name": "EPG user enters \"username\" into User Login text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"username\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoUserLoginTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 152,
+            "name": "EPG user enters \"password\" into User Password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoUserPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 153,
+            "name": "EPG user clicks on Save Acquirer button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveAcquirerButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3500,
+              "status": "skipped"
+            },
+            "line": 154,
+            "name": "EPG user checks Default Acquirer checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksDefaultAcquirerCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 155,
+            "name": "EPG user clicks on Routing rules tab",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnRoutingRulesTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1400,
+              "status": "skipped"
+            },
+            "line": 156,
+            "name": "EPG user clicks on Additional information tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Additional_information_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 157,
+            "name": "EPG user checks ETB under currency list",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_ETB_under_currency_list()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1600,
+              "status": "skipped"
+            },
+            "line": 158,
+            "name": "EPG user selects \"ETB (230)\" Default Currency dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ETB (230)\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsDefaultCurrencyDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1600,
+              "status": "skipped"
+            },
+            "line": 159,
+            "name": "EPG user enters \"1\" into Number of payment attempts text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Number_of_payment_attempts_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 160,
+            "name": "EPG user selects \"Version 1\" from Version of getOrderStatusExtended text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Version 1\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_from_Version_of_getOrderStatusExtended_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 161,
+            "name": "EPG user selects \"Version 2\" from Version of getPTwoPStatus text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Version 2\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_from_Version_of_getP_PStatus_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 162,
+            "name": "EPG user checks Use verification checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_Use_verification_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 163,
+            "name": "EPG user checks External fraud control checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_External_fraud_control_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 164,
+            "name": "EPG user enters \"Fraud control name\" into Name for fraud control text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Fraud control name\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Name_for_fraud_control_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 165,
+            "name": "EPG user checks Use name for fraud control checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_Use_name_for_fraud_control_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 166,
+            "name": "EPG user enters \"1\" into Duration of displaying order information text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoDurationOfDisplayingOrderInformationTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 167,
+            "name": "EPG user selects \"NO_PREFERENCE\" ThreeDSTwo Requester Challenge Indicator dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NO_PREFERENCE\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_selects_ThreeDS_Requester_Challenge_Indicator_dropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 169,
+            "name": "EPG user clicks on ThreeDS Configuration tab",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnThreeDSConfigurationTab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2400,
+              "status": "skipped"
+            },
+            "line": 170,
+            "name": "EPG user selects \"MasterCard Identity Check payments\" from Permissions checkbox list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MasterCard Identity Check payments\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsFromPermissionsCheckboxList(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 171,
+            "name": "EPG user clicks on Add new ThreeDS Configuration button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnAddNewThreeDSConfigurationButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 172,
+            "name": "EPG user selects \"Mastercard\" from Payment System dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mastercard\"",
+                  "offset": 17
+                }
+              ],
+              "location": "MerchantStepDef.epgUserSelectsFromPaymentSystemDropdown(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 173,
+            "name": "EPG user checks ThreeDSTwo Enabled checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksThreeDSTwoEnabledCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100,
+              "status": "skipped"
+            },
+            "line": 174,
+            "name": "EPG user checks Try ssl if U in VeRes checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksTrySslIfUInVeResCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 175,
+            "name": "EPG user checks Try ssl if U in PaRes checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksTrySslIfUInPaResCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 176,
+            "name": "EPG user clicks on Save ThreeDS Configuration button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveThreeDSConfigurationButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 178,
+            "name": "EPG user clicks on Additional parameters tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Additional_parameters_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 179,
+            "name": "EPG user clicks on Add new parameters button",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Add_new_parameters_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1400,
+              "status": "skipped"
+            },
+            "line": 180,
+            "name": "EPG user enters \"Card Payment\" into Name and payment method text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Card Payment\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Name_and_payment_method_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 181,
+            "name": "EPG user enters \"100\" into value text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_value_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1700,
+              "status": "skipped"
+            },
+            "line": 183,
+            "name": "EPG user clicks on Notifications tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Notifications_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 184,
+            "name": "EPG user checks on all customer EMail checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_on_all_customer_EMail_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 185,
+            "name": "EPG user checks on all Merchant EMail checkbox",
+            "match": {
+              "location": "MerchantStepDef.epg_user_checks_on_all_Merchant_EMail_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 186,
+            "name": "EPG user enters \"hazezew@gmail.com\" into Email address for certificate expiration notifications text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hazezew@gmail.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epgUserEntersIntoEmailAddressForCertificateExpirationNotificationsTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 187,
+            "name": "EPG user clicks on SMS Notification tab",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSMSNotificationTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 188,
+            "name": "EPG user checks all to Send SMS to customer checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksAllToSendSMSToCustomerCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 189,
+            "name": "EPG user checks all to Send SMS to merchant checkbox",
+            "match": {
+              "location": "MerchantStepDef.epgUserChecksAllToSendSMSToMerchantCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2300,
+              "status": "skipped"
+            },
+            "line": 191,
+            "name": "EPG user clicks on Address tab",
+            "match": {
+              "location": "MerchantStepDef.epg_user_clicks_on_Address_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 192,
+            "name": "EPG user enters \"Bole\" into Address text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bole\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_Address_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 193,
+            "name": "EPG user enters \"Addis Ababa\" into into City text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Addis Ababa\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_City_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 194,
+            "name": "EPG user enters \"Addis Ababa\" into into Region text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Addis Ababa\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_Region_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 195,
+            "name": "EPG user enters \"Ethiopia\" into into Country text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ethiopia\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_Country_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 196,
+            "name": "EPG user enters \"1234\" into into Postal Code text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_Postal_Code_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 197,
+            "name": "EPG user enters \"+251115557845\" into into Phone Number text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+251115557845\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_Phone_Number_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300,
+              "status": "skipped"
+            },
+            "line": 198,
+            "name": "EPG user enters \"Additional Information\" into into Additional Information Code text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Additional Information\"",
+                  "offset": 16
+                }
+              ],
+              "location": "MerchantStepDef.epg_user_enters_into_into_Additional_Information_Code_text_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1200,
+              "status": "skipped"
+            },
+            "line": 199,
+            "name": "EPG user clicks on Save merchant button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveMerchantButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1600,
+              "status": "skipped"
+            },
+            "line": 200,
+            "name": "EPG user clicks logout link",
+            "match": {
+              "location": "LoginStepDef.epgUserLogsOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@MerchantManagement"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "user opened web browser and maximizes it",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2900,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user has entered EPG system URL",
+            "match": {
+              "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-04-03T12:48:17.864Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 2453400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.initializeDriver()"
+            }
+          },
+          {
+            "result": {
+              "duration": 29100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 202,
+        "name": "Add new merchant without all mandatory field input data",
+        "description": "",
+        "id": "merchant-management;add-new-merchant-without-all-mandatory-field-input-data",
+        "after": [
+          {
+            "result": {
+              "duration": 215200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.createJiraIssue(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 270200,
+              "status": "failed"
+            },
+            "match": {
+              "location": "Hook.closeDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 203,
+            "name": "user enters \"testingteam1\" into EPG Username text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testingteam1\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 204,
+            "name": "user enters \"Abc@123456\" into EPG into password text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Abc@123456\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 205,
+            "name": "user clicks EPG Login button",
+            "match": {
+              "location": "LoginStepDef.userClicksEPGLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 206,
+            "name": "system displays EPG Admin dashboard",
+            "match": {
+              "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 207,
+            "name": "EPG user clicks Administration menu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 208,
+            "name": "EPG user clicks Merchants submenu",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "line": 209,
+            "name": "EPG system displays Merchants management page",
+            "match": {
+              "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 600,
+              "status": "skipped"
+            },
+            "line": 210,
+            "name": "EPG user clicks on create link",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnCreateLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 211,
+            "name": "EPG user clicks on Save merchant button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnSaveMerchantButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 212,
+            "name": "EPG add merchant page displays an alert message containing \"List of locales is empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"List of locales is empty\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 213,
+            "name": "EPG add merchant page displays an alert message containing \"Full name is empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Full name is empty\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 214,
+            "name": "EPG add merchant page displays an alert message containing \"Merchant website address is empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Merchant website address is empty\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 800,
+              "status": "skipped"
+            },
+            "line": 215,
+            "name": "EPG add merchant page displays an alert message containing \"DS Requestor Challenge Indicator is empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DS Requestor Challenge Indicator is empty\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 216,
+            "name": "EPG add merchant page displays an alert message containing \"Country is empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Country is empty\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 600,
+              "status": "skipped"
+            },
+            "line": 217,
+            "name": "EPG add merchant page displays an alert message containing \"Login is empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Login is empty\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 218,
+            "name": "EPG add merchant page displays an alert message containing \"Default acquirer not selected\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Default acquirer not selected\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 219,
+            "name": "EPG add merchant page displays an alert message containing \"MCC is empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MCC is empty\"",
+                  "offset": 59
+                }
+              ],
+              "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 900,
+              "status": "skipped"
+            },
+            "line": 220,
+            "name": "EPG user clicks on Close merchant button",
+            "match": {
+              "location": "MerchantStepDef.epgUserClicksOnCloseMerchantButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700,
+              "status": "skipped"
+            },
+            "line": 221,
+            "name": "EPG user clicks logout link",
+            "match": {
+              "location": "LoginStepDef.epgUserLogsOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@MerchantManagement"
+          }
+        ]
+      }
+    ],
+    "name": "Merchant Management",
+    "description": "",
+    "id": "merchant-management",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/merchant.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 11,
+          "column": 1
+        }
+      },
+      {
+        "name": "@MerchantManagement",
+        "type": "Tag",
+        "location": {
+          "line": 12,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -29,6 +29,7 @@ public class Hook {
 
     @Before(order=1)
     public void initializeDriver(){
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         os=(System.getProperty("os.name")).toUpperCase();
         if (driver == null) {
             if (os.contains("WIN")) {
@@ -97,6 +98,7 @@ public class Hook {
     }
     @Before(order = 2)
     public void beforeScenario(Scenario scenario){
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
 //        UnlockLockedUser.unlockAllUsers();
         if(!isReporterRunning){
             cucumberExtentReporter=new CucumberExtentReporter();

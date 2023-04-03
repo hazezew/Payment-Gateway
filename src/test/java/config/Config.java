@@ -1,7 +1,7 @@
 package config;
 
 public class Config {
-    public static final String browser="firefox"; // chrome, firefox
+    public static final String browser="chrome"; // chrome, firefox
     public static String epgURL="https://192.168.20.45:7045/epg_gui";
     public static String acsURL="https://192.168.20.45:7111/acsconsole/login.xhtml";
     public static String epgUsername="testingteam1";
