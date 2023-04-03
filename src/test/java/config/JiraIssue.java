@@ -10,7 +10,7 @@ public class JiraIssue {
     private static String priority="Medium";
     private static String jiraURL="https://kifiyaplatforms.atlassian.net";
     private static String userName="hazezew@kifiya.com";
-    private static String jiraToken="JopUeKPaPGxZx2Rzb7wj0BB8";
+    private static String jiraToken="jirataken";
     private JiraClient jira;
 
     public JiraIssue(){
