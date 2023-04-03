@@ -59,12 +59,13 @@ public class LoginStepDef extends AbstractPage {
     }
     @And("EPG user clicks logout link")
     public void epgUserLogsOut() {
+        epgLoginPage=null;
         epgLoginPage=epgAdminDashboardPage.clickLogout();
     }
 
     @Then("EPG system logs out and displays login page")
     public void epgSystemLogsOutAndDisplaysLoginPage() {
-        Assert.assertEquals(epgLoginPage.getURL(),Config.epgLogoutPageURL);
+        Assert.assertEquals(epgLoginPage.getURL(),Config.epgURL);
     }
 
     @When("user has entered ACS system URL")

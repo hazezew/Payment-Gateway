@@ -29,6 +29,7 @@ public class Hook {
 
     @Before(order=1)
     public void initializeDriver(){
+//        The following code resolved antivirus challenge we have
         System.setProperty("webdriver.http.factory", "jdk-http-client");
         os=(System.getProperty("os.name")).toUpperCase();
         if (driver == null) {
@@ -98,6 +99,7 @@ public class Hook {
     }
     @Before(order = 2)
     public void beforeScenario(Scenario scenario){
+//        The following code resolved antivirus challenge we have
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 //        UnlockLockedUser.unlockAllUsers();
         if(!isReporterRunning){

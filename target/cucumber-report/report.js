@@ -18,8 +18,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "error_message": "java.lang.ExceptionInInitializerError\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\nCaused by: java.lang.IllegalArgumentException: Unknown HttpClient factory jdk-http-client\r\n\tat org.openqa.selenium.remote.http.HttpClient$Factory.create(HttpClient.java:57)\r\n\tat org.openqa.selenium.remote.http.HttpClient$Factory.createDefault(HttpClient.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder.\u003cclinit\u003e(HttpCommandExecutor.java:58)\r\n\t... 26 more\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -32,7 +31,7 @@ formatter.match({
   "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add new merchant with valid and complete mandatory data",
@@ -55,7 +54,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user enters \"Abc@123456\" into EPG into password text field",
@@ -65,7 +64,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user clicks EPG Login button",
@@ -75,7 +74,7 @@ formatter.match({
   "location": "LoginStepDef.userClicksEPGLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "system displays EPG Admin dashboard",
@@ -85,7 +84,8 @@ formatter.match({
   "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "java.lang.AssertionError: expected [https://192.168.20.45:7045/epg_gui/] but found [https://192.168.20.45:7045/epg_gui/#login]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat stepDef.LoginStepDef.systemDisplaysEPGAdminDashboard(LoginStepDef.java:58)\r\n\tat ✽.system displays EPG Admin dashboard(file:src/test/resources/merchant.feature:22)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "EPG user clicks Administration menu",
@@ -467,12 +467,12 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.embedding("image/png", "embedded0.png", null);
 formatter.after({
   "status": "passed"
 });
 formatter.after({
-  "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.background({
   "name": "user opened web browser and maximizes it",
@@ -480,8 +480,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -494,7 +493,7 @@ formatter.match({
   "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Search and update registered merchant details",
@@ -517,7 +516,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user enters \"Abc@123456\" into EPG into password text field",
@@ -527,7 +526,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user clicks EPG Login button",
@@ -537,7 +536,7 @@ formatter.match({
   "location": "LoginStepDef.userClicksEPGLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "system displays EPG Admin dashboard",
@@ -547,7 +546,8 @@ formatter.match({
   "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "java.lang.AssertionError: expected [https://192.168.20.45:7045/epg_gui/] but found [https://192.168.20.45:7045/epg_gui/#login]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat stepDef.LoginStepDef.systemDisplaysEPGAdminDashboard(LoginStepDef.java:58)\r\n\tat ✽.system displays EPG Admin dashboard(file:src/test/resources/merchant.feature:66)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "EPG user clicks Administration menu",
@@ -679,12 +679,12 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.embedding("image/png", "embedded1.png", null);
 formatter.after({
   "status": "passed"
 });
 formatter.after({
-  "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.background({
   "name": "user opened web browser and maximizes it",
@@ -692,8 +692,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -706,7 +705,7 @@ formatter.match({
   "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add merchant with an already existing merchant detail",
@@ -729,7 +728,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user enters \"Abc@123456\" into EPG into password text field",
@@ -739,7 +738,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user clicks EPG Login button",
@@ -749,7 +748,7 @@ formatter.match({
   "location": "LoginStepDef.userClicksEPGLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "system displays EPG Admin dashboard",
@@ -759,7 +758,7 @@ formatter.match({
   "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks Administration menu",
@@ -769,7 +768,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks Merchants submenu",
@@ -779,7 +778,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG system displays Merchants management page",
@@ -789,7 +788,7 @@ formatter.match({
   "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on create link",
@@ -799,7 +798,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnCreateLink()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user click on Main Information tab",
@@ -809,7 +808,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClickOnMainInformationTab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"habitamuazezew\" into EPG Merchant Login text field",
@@ -819,7 +818,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoEPGMerchantLoginTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"HabitamuAzezew\" into Merchant Name text field",
@@ -829,7 +828,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoMerchantNameTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"1234\" into MCC text field",
@@ -839,7 +838,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoMCCTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"https://habitamu.com/\" into Merchant Website Address text field",
@@ -849,7 +848,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoMerchantWebsiteAddressTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters selects \"EN\" Payment Language dropdown",
@@ -859,7 +858,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersSelectsPaymentLanguageDropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"EN\" into List Of Locals text field",
@@ -869,7 +868,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoListOfLocalsTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"6\" into Pan Masked Digit Count text field",
@@ -879,7 +878,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoPanMaskedDigitCountTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects the Merchant Permissions",
@@ -889,7 +888,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsTheMerchantPermissions()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Acquirer tab for new Merchant",
@@ -899,7 +898,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnAcquirerTabForNewMerchant()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on add new Acquirer button",
@@ -909,7 +908,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnAddNewAcquirerButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"BunnaBankAcquirer\" from new Acquirer Name dropdown",
@@ -919,7 +918,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsFromNewAcquirerNameDropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"HAB123\" into Processing Merchant ID text field",
@@ -929,7 +928,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoProcessingMerchantIDTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"12345678\" into Terminal ID text field",
@@ -939,7 +938,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoTerminalIDTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"username\" into User Login text field",
@@ -949,7 +948,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoUserLoginTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"password\" into User Password text field",
@@ -959,7 +958,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoUserPasswordTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Save Acquirer button",
@@ -969,7 +968,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnSaveAcquirerButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks Default Acquirer checkbox",
@@ -979,7 +978,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserChecksDefaultAcquirerCheckbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Additional information tab",
@@ -989,7 +988,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_clicks_on_Additional_information_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks ETB under currency list",
@@ -999,7 +998,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_checks_ETB_under_currency_list()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"ETB (230)\" Default Currency dropdown",
@@ -1009,7 +1008,8 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsDefaultCurrencyDropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d111.0.5563.147)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference\nBuild info: version: \u00274.5.0\u0027, revision: \u0027fe167b119a\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002712.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e7ff6c50308692af6aa0c840a9e8a678, isElementDisplayed {id\u003df402f896-d652-4d77-ba3b-14f34bd96251}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\\Users\\user1\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59897}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59897/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (e7ff6c50308692af6aa0c840a9e8a678)] -\u003e xpath: //li[text()\u003d\u0027ETB (230)\u0027]]\nSession ID: e7ff6c50308692af6aa0c840a9e8a678\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:313)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObj.MerchantPage.selectDdlDefaultCurrency(MerchantPage.java:429)\r\n\tat stepDef.MerchantStepDef.epgUserSelectsDefaultCurrencyDropdown(MerchantStepDef.java:142)\r\n\tat ✽.EPG user selects \"ETB (230)\" Default Currency dropdown(file:src/test/resources/merchant.feature:110)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "EPG user enters \"1\" into Number of payment attempts text field",
@@ -1161,12 +1161,12 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.embedding("image/png", "embedded2.png", null);
 formatter.after({
   "status": "passed"
 });
 formatter.after({
-  "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.background({
   "name": "user opened web browser and maximizes it",
@@ -1174,8 +1174,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -1188,7 +1187,7 @@ formatter.match({
   "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add new merchant with all valid input value data",
@@ -1211,7 +1210,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user enters \"Abc@123456\" into EPG into password text field",
@@ -1221,7 +1220,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user clicks EPG Login button",
@@ -1231,7 +1230,7 @@ formatter.match({
   "location": "LoginStepDef.userClicksEPGLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "system displays EPG Admin dashboard",
@@ -1241,7 +1240,7 @@ formatter.match({
   "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks Administration menu",
@@ -1251,7 +1250,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks Merchants submenu",
@@ -1261,7 +1260,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG system displays Merchants management page",
@@ -1271,7 +1270,7 @@ formatter.match({
   "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on create link",
@@ -1281,7 +1280,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnCreateLink()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user click on Main Information tab",
@@ -1291,7 +1290,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClickOnMainInformationTab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"username\" into EPG Merchant Login text field",
@@ -1301,7 +1300,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoEPGMerchantLoginTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Habitamu Azezew\" into Merchant Name text field",
@@ -1311,7 +1310,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoMerchantNameTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"1234\" into MCC text field",
@@ -1321,7 +1320,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoMCCTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"https://habitamu.com/\" into Merchant Website Address text field",
@@ -1331,7 +1330,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoMerchantWebsiteAddressTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"hazezew@gmail.com\" into Merchant email Address(s) text field",
@@ -1341,7 +1340,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoMerchantEmailAddressSTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters selects \"EN\" Payment Language dropdown",
@@ -1351,7 +1350,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersSelectsPaymentLanguageDropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"EN\" into List Of Locals text field",
@@ -1361,7 +1360,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoListOfLocalsTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"6\" into Pan Masked Digit Count text field",
@@ -1371,7 +1370,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoPanMaskedDigitCountTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects the Merchant Permissions",
@@ -1381,7 +1380,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsTheMerchantPermissions()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Acquirer tab for new Merchant",
@@ -1391,7 +1390,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnAcquirerTabForNewMerchant()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on add new Acquirer button",
@@ -1401,7 +1400,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnAddNewAcquirerButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"BunnaBankAcquirer\" from new Acquirer Name dropdown",
@@ -1411,7 +1410,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsFromNewAcquirerNameDropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"HAB123\" into Processing Merchant ID text field",
@@ -1421,7 +1420,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoProcessingMerchantIDTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"123456789\" into Terminal ID text field",
@@ -1431,7 +1430,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoTerminalIDTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"username\" into User Login text field",
@@ -1441,7 +1440,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoUserLoginTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"password\" into User Password text field",
@@ -1451,7 +1450,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoUserPasswordTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Save Acquirer button",
@@ -1461,7 +1460,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnSaveAcquirerButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks Default Acquirer checkbox",
@@ -1471,7 +1470,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserChecksDefaultAcquirerCheckbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Routing rules tab",
@@ -1481,7 +1480,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnRoutingRulesTab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Additional information tab",
@@ -1491,7 +1490,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_clicks_on_Additional_information_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks ETB under currency list",
@@ -1501,7 +1500,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_checks_ETB_under_currency_list()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"ETB (230)\" Default Currency dropdown",
@@ -1511,7 +1510,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsDefaultCurrencyDropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"1\" into Number of payment attempts text field",
@@ -1521,7 +1520,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_Number_of_payment_attempts_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"Version 1\" from Version of getOrderStatusExtended text field",
@@ -1531,7 +1530,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_selects_from_Version_of_getOrderStatusExtended_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"Version 2\" from Version of getPTwoPStatus text field",
@@ -1541,7 +1540,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_selects_from_Version_of_getP_PStatus_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks Use verification checkbox",
@@ -1551,7 +1550,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_checks_Use_verification_checkbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks External fraud control checkbox",
@@ -1561,7 +1560,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_checks_External_fraud_control_checkbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Fraud control name\" into Name for fraud control text field",
@@ -1571,7 +1570,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_Name_for_fraud_control_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks Use name for fraud control checkbox",
@@ -1581,7 +1580,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_checks_Use_name_for_fraud_control_checkbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"1\" into Duration of displaying order information text field",
@@ -1591,7 +1590,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoDurationOfDisplayingOrderInformationTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"NO_PREFERENCE\" ThreeDSTwo Requester Challenge Indicator dropdown",
@@ -1601,7 +1600,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_selects_ThreeDS_Requester_Challenge_Indicator_dropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on ThreeDS Configuration tab",
@@ -1611,7 +1610,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnThreeDSConfigurationTab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"MasterCard Identity Check payments\" from Permissions checkbox list",
@@ -1621,7 +1620,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsFromPermissionsCheckboxList(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Add new ThreeDS Configuration button",
@@ -1631,7 +1630,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnAddNewThreeDSConfigurationButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user selects \"Mastercard\" from Payment System dropdown",
@@ -1641,7 +1640,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserSelectsFromPaymentSystemDropdown(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks ThreeDSTwo Enabled checkbox",
@@ -1651,7 +1650,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserChecksThreeDSTwoEnabledCheckbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks Try ssl if U in VeRes checkbox",
@@ -1661,7 +1660,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserChecksTrySslIfUInVeResCheckbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks Try ssl if U in PaRes checkbox",
@@ -1671,7 +1670,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserChecksTrySslIfUInPaResCheckbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Save ThreeDS Configuration button",
@@ -1681,7 +1680,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnSaveThreeDSConfigurationButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Additional parameters tab",
@@ -1691,7 +1690,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_clicks_on_Additional_parameters_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Add new parameters button",
@@ -1701,7 +1700,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_clicks_on_Add_new_parameters_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Card Payment\" into Name and payment method text field",
@@ -1711,7 +1710,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_Name_and_payment_method_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"100\" into value text field",
@@ -1721,7 +1720,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_value_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Notifications tab",
@@ -1731,7 +1730,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_clicks_on_Notifications_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks on all customer EMail checkbox",
@@ -1741,7 +1740,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_checks_on_all_customer_EMail_checkbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks on all Merchant EMail checkbox",
@@ -1751,7 +1750,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_checks_on_all_Merchant_EMail_checkbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"hazezew@gmail.com\" into Email address for certificate expiration notifications text field",
@@ -1761,7 +1760,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserEntersIntoEmailAddressForCertificateExpirationNotificationsTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on SMS Notification tab",
@@ -1771,7 +1770,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnSMSNotificationTab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks all to Send SMS to customer checkbox",
@@ -1781,7 +1780,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserChecksAllToSendSMSToCustomerCheckbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user checks all to Send SMS to merchant checkbox",
@@ -1791,7 +1790,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserChecksAllToSendSMSToMerchantCheckbox()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Address tab",
@@ -1801,7 +1800,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_clicks_on_Address_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Bole\" into Address text field",
@@ -1811,7 +1810,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_Address_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Addis Ababa\" into into City text field",
@@ -1821,7 +1820,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_into_City_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Addis Ababa\" into into Region text field",
@@ -1831,7 +1830,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_into_Region_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Ethiopia\" into into Country text field",
@@ -1841,7 +1840,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_into_Country_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"1234\" into into Postal Code text field",
@@ -1851,7 +1850,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_into_Postal_Code_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"+251115557845\" into into Phone Number text field",
@@ -1861,7 +1860,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_into_Phone_Number_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user enters \"Additional Information\" into into Additional Information Code text field",
@@ -1871,7 +1870,7 @@ formatter.match({
   "location": "MerchantStepDef.epg_user_enters_into_into_Additional_Information_Code_text_field(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Save merchant button",
@@ -1881,7 +1880,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnSaveMerchantButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks logout link",
@@ -1891,14 +1890,13 @@ formatter.match({
   "location": "LoginStepDef.epgUserLogsOut()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
 formatter.after({
-  "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.background({
   "name": "user opened web browser and maximizes it",
@@ -1906,8 +1904,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "error_message": "java.lang.NoClassDefFoundError: Could not initialize class org.openqa.selenium.remote.HttpCommandExecutor$DefaultClientFactoryHolder\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.getDefaultClientFactory(HttpCommandExecutor.java:62)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.\u003cinit\u003e(HttpCommandExecutor.java:87)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.\u003cinit\u003e(DriverCommandExecutor.java:80)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver$FirefoxDriverCommandExecutor.\u003cinit\u003e(FirefoxDriver.java:331)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:98)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:94)\r\n\tat stepDef.Hook.initializeDriver(Hook.java:48)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:42)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -1920,7 +1917,7 @@ formatter.match({
   "location": "LoginStepDef.user_has_entered_EPG_system_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add new merchant without all mandatory field input data",
@@ -1943,7 +1940,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGUsernameTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user enters \"Abc@123456\" into EPG into password text field",
@@ -1953,7 +1950,7 @@ formatter.match({
   "location": "LoginStepDef.userEntersIntoEPGIntoPasswordTextField(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user clicks EPG Login button",
@@ -1963,7 +1960,7 @@ formatter.match({
   "location": "LoginStepDef.userClicksEPGLoginButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "system displays EPG Admin dashboard",
@@ -1973,7 +1970,7 @@ formatter.match({
   "location": "LoginStepDef.systemDisplaysEPGAdminDashboard()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks Administration menu",
@@ -1983,7 +1980,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksAdministrationMenu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks Merchants submenu",
@@ -1993,7 +1990,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksMerchantsSubmenu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG system displays Merchants management page",
@@ -2003,7 +2000,7 @@ formatter.match({
   "location": "MerchantStepDef.epgSystemDisplaysMerchantsManagementPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on create link",
@@ -2013,7 +2010,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnCreateLink()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Save merchant button",
@@ -2023,7 +2020,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnSaveMerchantButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"List of locales is empty\"",
@@ -2033,7 +2030,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"Full name is empty\"",
@@ -2043,7 +2040,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"Merchant website address is empty\"",
@@ -2053,7 +2050,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"DS Requestor Challenge Indicator is empty\"",
@@ -2063,7 +2060,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"Country is empty\"",
@@ -2073,7 +2070,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"Login is empty\"",
@@ -2083,7 +2080,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"Default acquirer not selected\"",
@@ -2093,7 +2090,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG add merchant page displays an alert message containing \"MCC is empty\"",
@@ -2103,7 +2100,7 @@ formatter.match({
   "location": "MerchantStepDef.epgAddMerchantPageDisplaysAnAlertMessageContaining(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks on Close merchant button",
@@ -2113,7 +2110,7 @@ formatter.match({
   "location": "MerchantStepDef.epgUserClicksOnCloseMerchantButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "EPG user clicks logout link",
@@ -2123,13 +2120,12 @@ formatter.match({
   "location": "LoginStepDef.epgUserLogsOut()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
 });
 formatter.after({
-  "error_message": "java.lang.NullPointerException\r\n\tat config.CucumberExtentReporter.captureScreenshot(CucumberExtentReporter.java:91)\r\n\tat config.CucumberExtentReporter.createTest(CucumberExtentReporter.java:65)\r\n\tat stepDef.Hook.closeDriver(Hook.java:137)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat cucumber.runtime.Runtime$1.run(Runtime.java:104)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 });
