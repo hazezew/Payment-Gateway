@@ -10,6 +10,10 @@ public class Config {
     public static String acsUsername="testingteam";
     public static String acsPassword="Testingteam_12@!";
 
+    public static String fMURL="http://192.168.20.45:7014/SVFM/login.xhtml";
+    public static String fmAdminDashboardPageURL="http://192.168.20.45:7014/SVFM/pages/blank.xhtml";
+    public static String fmLogoutPageUrl="http://192.168.20.45:7014/SVFM/login.xhtml";
+
     public static String epgLogoutPageURL="https://192.168.20.45:7045/epg_gui/#login/";
 
     public static String epgAdminDashboard="https://192.168.20.45:7045/epg_gui/";
