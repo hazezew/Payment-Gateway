@@ -35,7 +35,7 @@ public class FMAdminDashboardPage {
     @FindBy(xpath = "//span[text()='Case management']")
     private WebElement lnkCaseManagement;
 
-    @FindBy(xpath = "//span[text()=\"Cases queue\"]")
+    @FindBy(xpath = "(//span[text()=\"Cases queue\"])[1]")
     private WebElement lnkCasesQueue;
 
 
@@ -48,23 +48,23 @@ public class FMAdminDashboardPage {
     public void clickLnkFraudManagement(){
         wait.until(ExpectedConditions.visibilityOf(lnkFraudManagement)).click();
     }
-    public void  hoverLnkCaseManagement(){
+    public void hoverLnkCaseManagement(){
         wait.until(ExpectedConditions.visibilityOf(lnkCaseManagement));
         action.moveToElement(lnkCaseManagement).build().perform();
     }
     public CasesQueuePage clickLnkCasesQueue(){
         wait.until(ExpectedConditions.visibilityOf(lnkCasesQueue)).click();
-//        action.moveToElement(lnkCasesQueue).build().perform();
         return new CasesQueuePage(driver);
     }
 
     public FMLoginPage clickLinkLogout(){
-        wait.until(ExpectedConditions.visibilityOf(linkLogout)).click();
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        action.moveToElement(linkLogout).build().perform();
+        wait.until(ExpectedConditions.visibilityOf(linkLogout)).click();
         return new FMLoginPage(driver);
     }
     public String getURL(){

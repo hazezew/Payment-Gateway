@@ -35,4 +35,29 @@ public class FraudManagementStepDef extends AbstractPage {
     public void fmSystemDisplaysCasesQueuePage() {
         Assert.assertTrue(casesQueuePage.getURL().contains(Config.fmCasesQueuePageURL));
     }
+
+    @And("FM user selects {string} from Entity Type dropdown")
+    public void fmUserSelectsFromEntityTypeDropdown(String entityType) {
+        casesQueuePage.setDDEntityType(entityType);
+    }
+
+    @And("FM user selects {string} from Locked by user dropdown")
+    public void fmUserSelectsFromLockedByUserDropdown(String lockedBy) {
+        casesQueuePage.setDDLockedBy(lockedBy);
+    }
+
+    @And("FM user selects {string} from Classification type dropdown")
+    public void fmUserSelectsFromClassificationTypeDropdown(String classificationType) {
+        casesQueuePage.setClassificationType(classificationType);
+    }
+
+    @And("FM user selects {string} from Forwarded dropdown")
+    public void fmUserSelectsFromForwardedDropdown(String forwarded) {
+        casesQueuePage.setForwarded(forwarded);
+    }
+
+    @And("FM user clicks on search button")
+    public void fmUserClicksOnSearchButton() {
+        casesQueuePage.clickIconSearch();
+    }
 }

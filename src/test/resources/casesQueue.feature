@@ -11,11 +11,11 @@
 @Regression
 @FraudManagement
 
-Feature: Login FM User
+Feature: Cases Queue management
   Background: user opened web browser and maximizes it
     When user has entered FM system URL
 
-  Scenario: Login into FM with valid username and password
+  Scenario: Search Cases Queue
     When user enters "Habtamu" into FM Username text field
     And user enters "Habtamu@1234" into FM into password text field
     And FM user clicks Login button
@@ -24,5 +24,9 @@ Feature: Login FM User
     And FM user moves mouse over Case management submenu
     And FM clicks on Cases queue child menu
     Then FM system displays Cases queue page
-#    steps to be executed after Cases queue page is displayed
+    And FM user selects "ACCOUNT_NUMBER" from Entity Type dropdown
+    And FM user selects "1000 - administrator" from Locked by user dropdown
+    And FM user selects "Classified positive" from Classification type dropdown
+    And FM user selects "Forwarded" from Forwarded dropdown
+    And FM user clicks on search button
     And FM user clicks logout link
