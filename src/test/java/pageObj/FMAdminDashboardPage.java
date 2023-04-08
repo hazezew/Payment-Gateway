@@ -18,12 +18,46 @@ public class FMAdminDashboardPage {
     @FindBy(xpath = "//span[contains(text(),'Log out')]")
     private WebElement linkLogout;
 
+//    main menu items
+    @FindBy(xpath = "//span[text()=\"Fraud Management\"]")
+    private WebElement lnkFraudManagement;
+
+    @FindBy(xpath = "(//span[text()='Reports'])[1]")
+    private WebElement lnkReports;
+
+    @FindBy(xpath = "//span[text()='Analytics tools']")
+    private WebElement lnkRAnalyticstools;
+
+    @FindBy(xpath = "//span[text()='System']")
+    private WebElement lnkRSystems;
+
+//    Submenu items under Fraud Management main menu
+    @FindBy(xpath = "//span[text()='Case management']")
+    private WebElement lnkCaseManagement;
+
+    @FindBy(xpath = "//span[text()=\"Cases queue\"]")
+    private WebElement lnkCasesQueue;
+
+
     public FMAdminDashboardPage(WebDriver driver){
         this.driver=driver;
         wait=new WebDriverWait(driver, Duration.ofSeconds(15));
         PageFactory.initElements(driver,this);
         action = new Actions(driver);
     }
+    public void clickLnkFraudManagement(){
+        wait.until(ExpectedConditions.visibilityOf(lnkFraudManagement)).click();
+    }
+    public void  hoverLnkCaseManagement(){
+        wait.until(ExpectedConditions.visibilityOf(lnkCaseManagement));
+        action.moveToElement(lnkCaseManagement).build().perform();
+    }
+    public CasesQueuePage clickLnkCasesQueue(){
+        wait.until(ExpectedConditions.visibilityOf(lnkCasesQueue)).click();
+//        action.moveToElement(lnkCasesQueue).build().perform();
+        return new CasesQueuePage(driver);
+    }
+
     public FMLoginPage clickLinkLogout(){
         wait.until(ExpectedConditions.visibilityOf(linkLogout)).click();
         try {

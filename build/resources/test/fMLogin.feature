@@ -9,7 +9,7 @@
 #  Test Environment: EthSwitch Test
 
 @Regression
-@LoginEPGUser
+@LoginFMUser
 
 Feature: Login FM User
   Background: user opened web browser and maximizes it
