@@ -8,11 +8,11 @@ import org.testng.Assert;
 import pageObj.AbstractPage;
 import pageObj.CasesQueuePage;
 
-public class FraudManagementStepDef extends AbstractPage {
+public class CaseManagementStepDef extends AbstractPage {
     private WebDriver driver;
     private CasesQueuePage casesQueuePage;
 
-    public  FraudManagementStepDef(){
+    public CaseManagementStepDef(){
         this.driver=super.driver;
     }
 
