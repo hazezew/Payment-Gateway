@@ -38,6 +38,15 @@ public class FMAdminDashboardPage {
     @FindBy(xpath = "(//span[text()=\"Cases queue\"])[1]")
     private WebElement lnkCasesQueue;
 
+    @FindBy(xpath = "//span[text()=\"Operator form\"]")
+    private WebElement lnkOperatorForm;
+
+    @FindBy(xpath = "//span[text()='Last reviewed cases']")
+    private WebElement lnkLastReviewedCases;
+
+    @FindBy(xpath = "//span[text()='Operator Group']")
+    private WebElement lnkOperatorGroup;
+
 
     public FMAdminDashboardPage(WebDriver driver){
         this.driver=driver;
@@ -55,6 +64,20 @@ public class FMAdminDashboardPage {
     public CasesQueuePage clickLnkCasesQueue(){
         wait.until(ExpectedConditions.visibilityOf(lnkCasesQueue)).click();
         return new CasesQueuePage(driver);
+    }
+
+    public OperatorFormPage clickLnkOperatorForm(){
+        wait.until(ExpectedConditions.visibilityOf(lnkOperatorForm)).click();
+        return new OperatorFormPage(driver);
+    }
+
+    public LastReviewedCasesPage clickLnkLastReviewedCases(){
+        wait.until(ExpectedConditions.visibilityOf(lnkLastReviewedCases)).click();
+        return new LastReviewedCasesPage(driver);
+    }
+    public OperatorGroupPage clickLnkOperatorGroup(){
+        wait.until(ExpectedConditions.visibilityOf(lnkOperatorGroup)).click();
+        return new OperatorGroupPage(driver);
     }
 
     public FMLoginPage clickLinkLogout(){

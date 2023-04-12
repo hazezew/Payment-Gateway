@@ -15,6 +15,10 @@ public class Config {
     public static String fmAdminDashboardPageURL="http://192.168.20.45:7014/SVFM/pages/blank.xhtml";
     public static String fmLogoutPageUrl="http://192.168.20.45:7014/SVFM/login.xhtml";
     public static String fmCasesQueuePageURL="http://192.168.20.45:7014/SVFM/pages/acm/acmAlertsQueue.xhtml";
+    public static String operatorFormPageURL="http://192.168.20.45:7014/SVFM/pages/acm/acmOperatorform.xhtml";
+    public static String lastReviewedCasesPageURL="http://192.168.20.45:7014/SVFM/pages/acm/acmLastViewedCases.xhtml";
+    public static String operatorGroupPageURL="http://192.168.20.45:7014/SVFM/pages/acm/acmOperatorGroup.xhtml";
+
 
     public static String epgLogoutPageURL="https://192.168.20.45:7045/epg_gui/#login/";
 

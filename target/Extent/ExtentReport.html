@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Apr 8, 2023 03:10:42 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Apr 12, 2023 10:56:40 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -69,6 +69,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -111,10 +112,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -134,15 +135,15 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Search Cases Queue</span>
-						<span class='test-time'>Apr 8, 2023 03:10:46 PM</span>
+						<span class='test-name'>Add new Operator Group with valid and complete data</span>
+						<span class='test-time'>Apr 12, 2023 10:56:44 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 8, 2023 03:10:46 PM</span>
-	<span class='label end-time'>Apr 8, 2023 03:10:46 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+	<span class='label start-time'>Apr 12, 2023 10:56:44 AM</span>
+	<span class='label end-time'>Apr 12, 2023 10:56:44 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='author-list'>
@@ -161,7 +162,255 @@
 		<tbody>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>3:10:46 PM</td>
+				<td class='timestamp'>10:56:44 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>SCENARIO PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Add already existing Operator Group</span>
+						<span class='test-time'>Apr 12, 2023 10:56:51 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 12, 2023 10:56:51 AM</span>
+	<span class='label end-time'>Apr 12, 2023 10:56:51 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+115ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='author-list'>
+		<span class='author label'>Test-Automation-Engineer-Habitamu-Azezew</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:56:51 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'>SCENARIO FAILED</span>
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:56:51 AM</td>
+				<td class='step-details'>
+						Please refer below screenshot for more detail.
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='Add_already_existing_Operator_Group.png' src='Add_already_existing_Operator_Group.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Add new Operator Group without complete data</span>
+						<span class='test-time'>Apr 12, 2023 10:56:56 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 12, 2023 10:56:56 AM</span>
+	<span class='label end-time'>Apr 12, 2023 10:56:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='author-list'>
+		<span class='author label'>Test-Automation-Engineer-Habitamu-Azezew</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:56:56 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>SCENARIO PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Successful Operator Group Search</span>
+						<span class='test-time'>Apr 12, 2023 10:57:00 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 12, 2023 10:57:00 AM</span>
+	<span class='label end-time'>Apr 12, 2023 10:57:00 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='author-list'>
+		<span class='author label'>Test-Automation-Engineer-Habitamu-Azezew</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:57:00 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>SCENARIO PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Unsuccessful Operator Group Search</span>
+						<span class='test-time'>Apr 12, 2023 10:57:04 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 12, 2023 10:57:04 AM</span>
+	<span class='label end-time'>Apr 12, 2023 10:57:04 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='author-list'>
+		<span class='author label'>Test-Automation-Engineer-Habitamu-Azezew</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:57:04 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>SCENARIO PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>Search and modify Operator Group</span>
+						<span class='test-time'>Apr 12, 2023 10:57:09 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 12, 2023 10:57:09 AM</span>
+	<span class='label end-time'>Apr 12, 2023 10:57:09 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='author-list'>
+		<span class='author label'>Test-Automation-Engineer-Habitamu-Azezew</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:57:09 AM</td>
+				<td class='step-details'>
+						<span class='badge white-text green'>SCENARIO PASSED</span>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Delete an existing Operator Group</span>
+						<span class='test-time'>Apr 12, 2023 10:57:14 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Apr 12, 2023 10:57:14 AM</span>
+	<span class='label end-time'>Apr 12, 2023 10:57:14 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+<div class='test-attributes'>
+	<div class='author-list'>
+		<span class='author label'>Test-Automation-Engineer-Habitamu-Azezew</span>
+	</div>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:57:14 AM</td>
 				<td class='step-details'>
 						<span class='badge white-text green'>SCENARIO PASSED</span>
 					
@@ -214,13 +463,14 @@
 					<div class='author-heading'>
 						<span class='author-name'>Test-Automation-Engineer-Habitamu-Azezew</span>
 						<span class='author-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>6</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='author-tests'>
@@ -234,8 +484,38 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 8, 2023 03:10:46 PM</td>
-										<td class='linked' test-id='1'>Search Cases Queue</td>
+										<td>Apr 12, 2023 10:56:44 AM</td>
+										<td class='linked' test-id='1'>Add new Operator Group with valid and complete data</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 12, 2023 10:56:51 AM</td>
+										<td class='linked' test-id='2'>Add already existing Operator Group</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Apr 12, 2023 10:56:56 AM</td>
+										<td class='linked' test-id='3'>Add new Operator Group without complete data</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 12, 2023 10:57:00 AM</td>
+										<td class='linked' test-id='4'>Successful Operator Group Search</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 12, 2023 10:57:04 AM</td>
+										<td class='linked' test-id='5'>Unsuccessful Operator Group Search</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 12, 2023 10:57:09 AM</td>
+										<td class='linked' test-id='6'>Search and modify Operator Group</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Apr 12, 2023 10:57:14 AM</td>
+										<td class='linked' test-id='7'>Delete an existing Operator Group</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -260,7 +540,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -272,19 +552,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 8, 2023 03:10:42 PM</div>
+					<div class='panel-lead'>Apr 12, 2023 10:56:40 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 8, 2023 03:10:46 PM</div>
+			 		<div class='panel-lead'>Apr 12, 2023 10:57:14 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 4s+392ms</div>
+					<div class='panel-lead'>0h 0m 33s+695ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -334,7 +614,7 @@
 							</tr>
 							<tr>
 								<td>Automation Test Date</td>
-								<td>2023-04-08</td>
+								<td>2023-04-12</td>
 							</tr>
 					</table>
 				</div>
@@ -347,14 +627,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+                parentCount: 7,
+				passParent: 6,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -379,7 +659,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Search Cases Queue":0.002
+			        "Add new Operator Group with valid and complete data":0.004,"Add already existing Operator Group":0.115,"Add new Operator Group without complete data":0,"Successful Operator Group Search":0,"Unsuccessful Operator Group Search":0,"Search and modify Operator Group":0,"Delete an existing Operator Group":0
 			};
 		</script>
 	
