@@ -30,7 +30,7 @@ Feature: Operator Group management
     And FM user clicks on Save new Operator Group button
     And FM user clicks logout link
 
-  Scenario: Add already existing Operator Group
+  Scenario: Add duplicate Operator Group
     And FM user clicks on Add new Operator Group button
     And FM user enters "Habtamu" into Name of Operator Group textfield
     And FM user selects "1000 - New bank" from Private Scheme of Operator Group page
