@@ -13,6 +13,7 @@ public class CaseManagementStepDef extends AbstractPage {
     private OperatorFormPage operatorFormPage;
     private LastReviewedCasesPage lastReviewedCasesPage;
     private OperatorGroupPage operatorGroupPage;
+    private CaseManagementSettingsPage caseManagementSettingsPage;
 
     public CaseManagementStepDef(){
         this.driver=super.driver;
@@ -178,5 +179,30 @@ public class CaseManagementStepDef extends AbstractPage {
     @And("FM user clicks Yes for delete Operator Group confirmation")
     public void fmUserClicksYesForDeleteOperatorGroupConfirmation() {
         operatorGroupPage.clickBtnPopupYesConfirmation();
+    }
+
+    @And("FM user clicks on Case Management Settings child menu")
+    public void fmUserClicksOnCaseManagementSettingsChildMenu() {
+        caseManagementSettingsPage=fmAdminDashboardPage.clickLnkCaseManagementSettings();
+    }
+
+    @Then("FM system displays Case Management Settings page")
+    public void fmSystemDisplaysCaseManagementSettingsPage() {
+        Assert.assertTrue(caseManagementSettingsPage.getURL().contains(Config.caseManagementSettingsPageURL));
+    }
+
+    @And("FM user clicks on edit Case Management Settings button")
+    public void fmUserClicksOnEditCaseManagementSettingsButton() {
+        caseManagementSettingsPage.clickBtnEdit();
+    }
+
+    @And("FM user selects {string} from Default Investigation dropdown")
+    public void fmUserSelectsFromDefaultInvestigationDropdown(String defaultInvestigation) {
+        caseManagementSettingsPage.selectMapDefaultInvestigationEntity(defaultInvestigation);
+    }
+
+    @And("FM user clicks Save Case Management Settings button")
+    public void fmUserClicksSaveCaseManagementSettingsButton() {
+        caseManagementSettingsPage.clickBtnSave();
     }
 }

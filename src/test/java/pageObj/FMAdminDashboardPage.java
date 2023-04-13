@@ -47,6 +47,9 @@ public class FMAdminDashboardPage {
     @FindBy(xpath = "//span[text()='Operator Group']")
     private WebElement lnkOperatorGroup;
 
+    @FindBy(xpath = "//span[text()='Settings']")
+    private WebElement lnkCaseManagementSettings;
+
 
     public FMAdminDashboardPage(WebDriver driver){
         this.driver=driver;
@@ -80,12 +83,18 @@ public class FMAdminDashboardPage {
         return new OperatorGroupPage(driver);
     }
 
+    public CaseManagementSettingsPage clickLnkCaseManagementSettings(){
+        wait.until(ExpectedConditions.visibilityOf(lnkCaseManagementSettings)).click();
+        return new CaseManagementSettingsPage(driver);
+    }
+
     public FMLoginPage clickLinkLogout(){
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        driver.navigate().refresh();
         action.moveToElement(linkLogout).build().perform();
         wait.until(ExpectedConditions.visibilityOf(linkLogout)).click();
         return new FMLoginPage(driver);

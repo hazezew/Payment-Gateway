@@ -18,7 +18,7 @@ public class Config {
     public static String operatorFormPageURL="http://192.168.20.45:7014/SVFM/pages/acm/acmOperatorform.xhtml";
     public static String lastReviewedCasesPageURL="http://192.168.20.45:7014/SVFM/pages/acm/acmLastViewedCases.xhtml";
     public static String operatorGroupPageURL="http://192.168.20.45:7014/SVFM/pages/acm/acmOperatorGroup.xhtml";
-
+    public static String caseManagementSettingsPageURL="http://192.168.20.45:7014/SVFM/pages/acm/investigationSettings.xhtml";
 
     public static String epgLogoutPageURL="https://192.168.20.45:7045/epg_gui/#login/";
 
