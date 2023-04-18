@@ -26,5 +26,5 @@ Feature: Case Management Settings
     Then FM system displays Case Management Settings page
     And FM user clicks on edit Case Management Settings button
     And FM user selects "MERCHANT_ID" from Default Investigation dropdown
-#    And FM user clicks Save Case Management Settings button
+    And FM user clicks Save Case Management Settings button
     And FM user clicks logout link

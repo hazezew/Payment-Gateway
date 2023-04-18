@@ -2,6 +2,7 @@ package pageObj;
 
 import config.Config;
 import org.openqa.selenium.*;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -55,35 +56,48 @@ public class CaseManagementSettingsPage {
 
 
     public void clickBtnSave(){
-        if(Config.browser=="chrome"){
-            JavascriptExecutor executor = (JavascriptExecutor)driver;
-            executor.executeScript("document.body.style.zoom = '0.75'");
-        }
-        if(Config.browser=="firefox"){
-            Robot robot = null;
-            try {
-                robot = new Robot();
-            } catch (AWTException e) {
-                e.printStackTrace();
-            }
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_MINUS);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-            robot.keyRelease(KeyEvent.VK_MINUS);
+        Dimension currentDimension = driver. manage(). window(). getSize();
+        int height = currentDimension. getHeight();
+        int width = currentDimension. getWidth();
 
-            robot.keyPress(KeyEvent.VK_CONTROL);
-            robot.keyPress(KeyEvent.VK_MINUS);
-            robot.keyRelease(KeyEvent.VK_CONTROL);
-            robot.keyRelease(KeyEvent.VK_MINUS);
-        }
+//        if(Config.browser=="chrome"){
+//            JavascriptExecutor executor = (JavascriptExecutor)driver;
+//            executor.executeScript("document.body.style.zoom = '0.75'");
+//        }
+//        if(Config.browser=="firefox"){
+//            Robot robot = null;
+//            try {
+//                robot = new Robot();
+//            } catch (AWTException e) {
+//                e.printStackTrace();
+//            }
+//            robot.keyPress(KeyEvent.VK_CONTROL);
+//            robot.keyPress(KeyEvent.VK_MINUS);
+//            robot.keyRelease(KeyEvent.VK_CONTROL);
+//            robot.keyRelease(KeyEvent.VK_MINUS);
+//
+//            robot.keyPress(KeyEvent.VK_CONTROL);
+//            robot.keyPress(KeyEvent.VK_MINUS);
+//            robot.keyRelease(KeyEvent.VK_CONTROL);
+//            robot.keyRelease(KeyEvent.VK_MINUS);
+//        }
+//
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        WebElement form=driver.findElement(By.xpath("(//form[contains(@id,\"editor\")])[1]"));
+        action.dragAndDropBy(form,width/64,0).build().perform();
 
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//span[contains(text(),\"Save\")])[1]")))).click();
-//        wait.until(ExpectedConditions.visibilityOf(btnSave)).click();
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+
+//        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//span[contains(text(),\"Save\")])[1]")))).click();
+        wait.until(ExpectedConditions.visibilityOf(btnSave)).click();
     }
 
     public void selectMapDefaultInvestigationEntity(String defaultInvestigationEntity){
