@@ -139,7 +139,6 @@ public class MerchantPage {
 
     @FindBy(xpath = "//input[@name='threeDSRequestorChallengeInd']")
     private WebElement ddl3DS2RequestOrChallengeIndicator;
-
     @FindBy(xpath = "//li[text()='NO_PREFERENCE']")
     private WebElement lst3DS2RequestOrChallengeIndicator;
 

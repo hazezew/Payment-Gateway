@@ -9,8 +9,11 @@ public class AbstractPage {
     public static boolean userLoginStatus=false;
     public static EPGLoginPage epgLoginPage;
     public static ACSLoginPage acsLoginPage;
+    public static DSLoginPage dsLoginPage;
     public static EPGAdminDashboardPage epgAdminDashboardPage;
     public static ACSAdminDashboardPage acsAdminDashboardPage;
+    public static DSAdminDashboardPage dsAdminDashboardPage;
+    public static EPGSuperAdminPage epgSuperAdminPage;
 
     public static void setDriver(WebDriver driverObj){
         driver=driverObj;

@@ -16,10 +16,18 @@ Feature: Login EPG User
     When user has entered EPG system URL
 
     Scenario: Login into EPG with valid username and password
-      When user enters "testingteam1" into EPG Username text field
-      And user enters "Abc@123456" into EPG into password text field
+      When user enters "belesti1" into EPG Username text field
+      And user enters "Bel@Epg#4" into EPG into password text field
       And user clicks EPG Login button
       Then system displays EPG Admin dashboard
+      And EPG user clicks logout link
+      Then EPG system logs out and displays login page
+
+    Scenario: Login into EPG Super Admin with valid username and password
+      When user enters "admin" into EPG Username text field
+      And user enters "admin1" into EPG into password text field
+      And user clicks EPG Login button
+      Then system displays EPG Super Admin dashboard
       And EPG user clicks logout link
       Then EPG system logs out and displays login page
 

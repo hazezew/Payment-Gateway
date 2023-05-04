@@ -15,7 +15,7 @@ Feature: Merchant Management
   Background: user opened web browser and maximizes it
     When user has entered EPG system URL
 
-  Scenario: Add new merchant with valid and complete mandatory data
+  Scenario: Create new user with valid and complete mandatory data
     When user enters "testingteam1" into EPG Username text field
     And user enters "Abc@123456" into EPG into password text field
     And user clicks EPG Login button
@@ -25,8 +25,8 @@ Feature: Merchant Management
     Then EPG system displays Merchants management page
     And EPG user clicks on create link
     And EPG user click on Main Information tab
-    And EPG user enters "newusername11" into EPG Merchant Login text field
-    And EPG user enters "Abenezerwondemu" into Merchant Name text field
+    And EPG user enters "manman" into EPG Merchant Login text field
+    And EPG user enters "manman123" into Merchant Name text field
     And EPG user enters "1234" into MCC text field
     And EPG user enters "https://abenezer.com/" into Merchant Website Address text field
     And EPG user enters selects "EN" Payment Language dropdown
