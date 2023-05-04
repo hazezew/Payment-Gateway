@@ -11,14 +11,22 @@ import org.testng.Assert;
 import pageObj.ACSLoginPage;
 import pageObj.AbstractPage;
 import pageObj.EPGLoginPage;
+<<<<<<< HEAD
 import pageObj.EPGSuperAdminPage;
+=======
+import pageObj.FMLoginPage;
+>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
 
 public class LoginStepDef extends AbstractPage {
     private WebDriver driver;
     Actions action;
     private EPGLoginPage epgLoginPage;
     private ACSLoginPage acsLoginPage;
+<<<<<<< HEAD
     private EPGSuperAdminPage epgSuperAdminPage;
+=======
+    private FMLoginPage fmLoginPage;
+>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
 
     public LoginStepDef(){
         this.driver=super.driver;
@@ -121,4 +129,67 @@ public class LoginStepDef extends AbstractPage {
         Assert.assertEquals(acsLoginPage.getURL(),Config.acsURL);
     }
 
+<<<<<<< HEAD
+=======
+    @When("user has entered FM system URL")
+    public void userHasEnteredFMSystemURL() {
+        driver.get(Config.fMURL);
+//        if(Config.browser=="chrome"){
+//            try{
+//                driver.findElement(By.id("details-button")).click();
+//                action=new Actions(driver);
+//                action.scrollToElement(driver.findElement(By.id("proceed-link")));
+//                driver.findElement(By.id("proceed-link")).click();
+//            }catch (Exception e){}
+//        }
+        fmLoginPage=new FMLoginPage(driver);
+        super.fmLoginPage=fmLoginPage;
+    }
+
+    @When("user enters {string} into FM Username text field")
+    public void userEntersIntoFMUsernameTextField(String userName) {
+        fmLoginPage.setTxtUserName(userName);
+    }
+
+    @And("user enters {string} into FM into password text field")
+    public void userEntersIntoFMIntoPasswordTextField(String password) {
+        fmLoginPage.setTxtPassword(password);
+    }
+
+    @And("FM user clicks Login button")
+    public void userFMClicksLoginButton() {
+        fmAdminDashboardPage=fmLoginPage.clickLoginButton();
+    }
+
+    @Then("system displays FM Admin dashboard")
+    public void systemDisplaysFMAdminDashboard() {
+        Assert.assertEquals(fmAdminDashboardPage.getURL(),Config.fmAdminDashboardPageURL);
+    }
+
+    @And("FM user clicks logout link")
+    public void fmUserClicksLogoutLink() {
+        fmLoginPage=null;
+        fmLoginPage=fmAdminDashboardPage.clickLinkLogout();
+    }
+
+    @Then("FM system logs out and displays FM login page")
+    public void fmSystemLogsOutAndDisplaysFMLoginPage() {
+        Assert.assertEquals(Config.fmLogoutPageUrl,fmLoginPage.getURL());
+    }
+
+    @Then("FM system displays error message {string}")
+    public void fmSystemDisplaysErrorMessage(String errorMessage) {
+        Assert.assertEquals(fmLoginPage.getErrorMessage(),errorMessage);
+    }
+
+    @Then("FM login page displays error message {string} about user")
+    public void fmLoginPageDisplaysErrorMessageAboutUser(String emptyUserValidationMessage) {
+        Assert.assertEquals(fmLoginPage.getEmptyUserMessage(),emptyUserValidationMessage);
+    }
+
+    @And("FM login page displays error message {string} about password")
+    public void fmLoginPageDisplaysErrorMessageAboutPassword(String emptyPasswordValidationMessage) {
+        Assert.assertEquals(fmLoginPage.getEmptyPasswordMessage(),emptyPasswordValidationMessage);
+    }
+>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
 }
