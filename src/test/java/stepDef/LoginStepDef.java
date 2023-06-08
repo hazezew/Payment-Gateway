@@ -11,13 +11,20 @@ import org.testng.Assert;
 import pageObj.ACSLoginPage;
 import pageObj.AbstractPage;
 import pageObj.EPGLoginPage;
+
+import pageObj.EPGSuperAdminPage;
+
 import pageObj.FMLoginPage;
+
 
 public class LoginStepDef extends AbstractPage {
     private WebDriver driver;
     Actions action;
     private EPGLoginPage epgLoginPage;
     private ACSLoginPage acsLoginPage;
+
+    private EPGSuperAdminPage epgSuperAdminPage;
+
     private FMLoginPage fmLoginPage;
 
     public LoginStepDef(){
@@ -53,6 +60,16 @@ public class LoginStepDef extends AbstractPage {
     @And("user clicks EPG Login button")
     public void userClicksEPGLoginButton() {
         epgAdminDashboardPage=epgLoginPage.clickBtnLogin();
+    }
+
+    @And("super user clicks EPG Login button")
+    public void superUserClicksEPGLoginButton() {
+        epgAdminDashboardPage=epgLoginPage.clickBtnLogin();
+    }
+
+    @Then("system displays EPG Super Admin dashboard")
+    public void systemDisplaysEPGSuperAdminDashboard() {
+        Assert.assertEquals(epgAdminDashboardPage.getURL(),Config.epgAdminDashboard);
     }
 
     @Then("system displays EPG Admin dashboard")
@@ -110,6 +127,7 @@ public class LoginStepDef extends AbstractPage {
     public void acsSystemDisplaysLoginPage() {
         Assert.assertEquals(acsLoginPage.getURL(),Config.acsURL);
     }
+
 
     @When("user has entered FM system URL")
     public void userHasEnteredFMSystemURL() {

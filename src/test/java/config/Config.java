@@ -30,5 +30,14 @@ public class Config {
     public static String acsAdminDashboard="https://192.168.20.45:7111/acsconsole/";
 
     public static String merchantPageURL="https://192.168.20.45:7045/epg_gui/#merchants";
+    public static String usersPageInEPGSuperAdminURL = "https://192.168.20.45:7045/epg_gui/#users";
+
+    public static String acquirerName = "acquirerauto7";
+
+    // DS
+    public static String dsURL = "http://192.168.20.45:7051/en/#/login";
+    public static String dsAdminDashboard = "http://192.168.20.45:7051/en/#/admin/threeds1transaction";
+
+
 
 }
