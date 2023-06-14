@@ -34,6 +34,7 @@ public class EPGLoginPage {
     @FindBy(id = "ext-comp-1088")
     private WebElement authenticationForm;
 
+
     public EPGLoginPage(WebDriver driver){
         this.driver=driver;
         wait=new WebDriverWait(driver, Duration.ofSeconds(15));

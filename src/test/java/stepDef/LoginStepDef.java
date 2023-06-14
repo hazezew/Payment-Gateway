@@ -17,6 +17,7 @@ import pageObj.EPGSuperAdminPage;
 import pageObj.FMLoginPage;
 
 
+
 public class LoginStepDef extends AbstractPage {
     private WebDriver driver;
     Actions action;
@@ -26,6 +27,7 @@ public class LoginStepDef extends AbstractPage {
     private EPGSuperAdminPage epgSuperAdminPage;
 
     private FMLoginPage fmLoginPage;
+
 
     public LoginStepDef(){
         this.driver=super.driver;
@@ -90,6 +92,17 @@ public class LoginStepDef extends AbstractPage {
     @When("user has entered ACS system URL")
     public void userHasEnteredACSSystemURL() {
         driver.get(Config.acsURL);
+
+        if(Config.browser=="chrome"){
+            try{
+                driver.findElement(By.id("details-button")).click();
+                action=new Actions(driver);
+                action.scrollToElement(driver.findElement(By.id("proceed-link")));
+                driver.findElement(By.id("proceed-link")).click();
+            }catch (Exception e){}
+
+        }
+
         acsLoginPage=new ACSLoginPage(driver);
         super.acsLoginPage=acsLoginPage;
     }
@@ -189,4 +202,5 @@ public class LoginStepDef extends AbstractPage {
     public void fmLoginPageDisplaysErrorMessageAboutPassword(String emptyPasswordValidationMessage) {
         Assert.assertEquals(fmLoginPage.getEmptyPasswordMessage(),emptyPasswordValidationMessage);
     }
+
 }

@@ -28,6 +28,7 @@ Feature: Batch Operations
     And EPG user clicks on upload file button
 
   Scenario: batch processing of bindings
+    # to be rechecked autoit to read file from project repository resource
     And EPG user clicks on Batch Processing of Bindings submenu
     And EPG user selects "merchantone" on merchant textfield
     And EPG user clicks on select file button

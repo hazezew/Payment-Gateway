@@ -50,7 +50,7 @@ public class BatchOperationsPage {
     }
     public void selectAndUploadFile() {
         try {
-            Runtime.getRuntime().exec("C:\\Users\\user\\Documents\\FileUpload.exe");
+            Runtime.getRuntime().exec("C:\\Users\\user\\Desktop\\payment-gateway\\src\\test\\autoit\\FileUpload.exe");
         } catch (IOException e) {
             e.printStackTrace();
         }
