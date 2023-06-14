@@ -53,11 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-<<<<<<< HEAD
-			<span class='label blue darken-3 suite-start-time'>May 3, 2023 12:07:18 PM</span>
-=======
-			<span class='label blue darken-3 suite-start-time'>Apr 18, 2023 04:44:35 PM</span>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+			<span class='label blue darken-3 suite-start-time'>Jun 14, 2023 11:35:00 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -72,7 +68,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -115,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -136,28 +132,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-<<<<<<< HEAD
-						<span class='test-name'>batch sending of the payment form</span>
-						<span class='test-time'>May 3, 2023 12:07:42 PM</span>
-=======
-						<span class='test-name'>Case Management Settings page integrity</span>
-						<span class='test-time'>Apr 18, 2023 04:44:40 PM</span>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>ACS User searches for an ACS User</span>
+						<span class='test-time'>Jun 14, 2023 11:35:06 AM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-<<<<<<< HEAD
-	<span class='label start-time'>May 3, 2023 12:07:42 PM</span>
-	<span class='label end-time'>May 3, 2023 12:07:42 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+9ms</span>
-=======
-	<span class='label start-time'>Apr 18, 2023 04:44:40 PM</span>
-	<span class='label end-time'>Apr 18, 2023 04:44:40 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+3ms</span>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+	<span class='label start-time'>Jun 14, 2023 11:35:06 AM</span>
+	<span class='label end-time'>Jun 14, 2023 11:35:06 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+125ms</span>
 </div>
 <div class='test-attributes'>
 	<div class='author-list'>
@@ -174,16 +159,20 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-<<<<<<< HEAD
-				<td class='timestamp'>12:07:42 PM</td>
-=======
-				<td class='timestamp'>4:44:40 PM</td>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>11:35:06 AM</td>
 				<td class='step-details'>
-						<span class='badge white-text green'>SCENARIO PASSED</span>
+						<span class='badge white-text red'>SCENARIO FAILED</span>
 					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>11:35:06 AM</td>
+				<td class='step-details'>
+						Please refer below screenshot for more detail.
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='ACS_User_searches_for_an_ACS_User.png' src='ACS_User_searches_for_an_ACS_User.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -233,13 +222,13 @@
 					<div class='author-heading'>
 						<span class='author-name'>Test-Automation-Engineer-Habitamu-Azezew</span>
 						<span class='author-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='author-content hide'>
 						<div class='author-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='author-tests'>
@@ -253,14 +242,9 @@
 								</thead>
 								<tbody>
 									<tr>
-<<<<<<< HEAD
-										<td>May 3, 2023 12:07:42 PM</td>
-										<td class='linked' test-id='1'>batch sending of the payment form</td>
-=======
-										<td>Apr 18, 2023 04:44:40 PM</td>
-										<td class='linked' test-id='1'>Case Management Settings page integrity</td>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jun 14, 2023 11:35:06 AM</td>
+										<td class='linked' test-id='1'>ACS User searches for an ACS User</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -296,31 +280,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-<<<<<<< HEAD
-					<div class='panel-lead'>May 3, 2023 12:07:18 PM</div>
-=======
-					<div class='panel-lead'>Apr 18, 2023 04:44:35 PM</div>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+					<div class='panel-lead'>Jun 14, 2023 11:35:00 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-<<<<<<< HEAD
-			 		<div class='panel-lead'>May 3, 2023 12:07:42 PM</div>
-=======
-			 		<div class='panel-lead'>Apr 18, 2023 04:44:40 PM</div>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+			 		<div class='panel-lead'>Jun 14, 2023 11:35:06 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-<<<<<<< HEAD
-					<div class='panel-lead'>0h 0m 24s+116ms</div>
-=======
-					<div class='panel-lead'>0h 0m 4s+937ms</div>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+					<div class='panel-lead'>0h 0m 6s+231ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -370,11 +342,7 @@
 							</tr>
 							<tr>
 								<td>Automation Test Date</td>
-<<<<<<< HEAD
-								<td>2023-05-03</td>
-=======
-								<td>2023-04-18</td>
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+								<td>2023-06-14</td>
 							</tr>
 					</table>
 				</div>
@@ -388,13 +356,13 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -419,11 +387,7 @@
 		</script>
 		<script>
 			var timeline = {
-<<<<<<< HEAD
-			        "batch sending of the payment form":0.009
-=======
-			        "Case Management Settings page integrity":0.003
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+			        "ACS User searches for an ACS User":0.125
 			};
 		</script>
 	

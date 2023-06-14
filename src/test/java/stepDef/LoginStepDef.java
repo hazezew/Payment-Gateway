@@ -11,22 +11,22 @@ import org.testng.Assert;
 import pageObj.ACSLoginPage;
 import pageObj.AbstractPage;
 import pageObj.EPGLoginPage;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 import pageObj.EPGSuperAdminPage;
-=======
+//=======
 import pageObj.FMLoginPage;
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+//>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
 
 public class LoginStepDef extends AbstractPage {
     private WebDriver driver;
     Actions action;
     private EPGLoginPage epgLoginPage;
     private ACSLoginPage acsLoginPage;
-<<<<<<< HEAD
+//<<<<<<< HEAD
     private EPGSuperAdminPage epgSuperAdminPage;
-=======
+//=======
     private FMLoginPage fmLoginPage;
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+//>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
 
     public LoginStepDef(){
         this.driver=super.driver;
@@ -91,6 +91,17 @@ public class LoginStepDef extends AbstractPage {
     @When("user has entered ACS system URL")
     public void userHasEnteredACSSystemURL() {
         driver.get(Config.acsURL);
+
+        if(Config.browser=="chrome"){
+            try{
+                driver.findElement(By.id("details-button")).click();
+                action=new Actions(driver);
+                action.scrollToElement(driver.findElement(By.id("proceed-link")));
+                driver.findElement(By.id("proceed-link")).click();
+            }catch (Exception e){}
+
+        }
+
         acsLoginPage=new ACSLoginPage(driver);
         super.acsLoginPage=acsLoginPage;
     }
@@ -129,8 +140,8 @@ public class LoginStepDef extends AbstractPage {
         Assert.assertEquals(acsLoginPage.getURL(),Config.acsURL);
     }
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
     @When("user has entered FM system URL")
     public void userHasEnteredFMSystemURL() {
         driver.get(Config.fMURL);
@@ -191,5 +202,5 @@ public class LoginStepDef extends AbstractPage {
     public void fmLoginPageDisplaysErrorMessageAboutPassword(String emptyPasswordValidationMessage) {
         Assert.assertEquals(fmLoginPage.getEmptyPasswordMessage(),emptyPasswordValidationMessage);
     }
->>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+//>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
 }

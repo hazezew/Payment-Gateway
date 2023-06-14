@@ -50,4 +50,14 @@ public class ACSAdminDashboardPage {
         clickMenuIcon();
         clickLinkLogout();
     }
+
+    public ACSUsersPage clickOnMenuIcon() {
+        wait.until(ExpectedConditions.visibilityOf(menuIcon));
+        menuIcon.click();
+
+        return new ACSUsersPage(driver);
+    }
+
+
+
 }

@@ -16,8 +16,8 @@ Feature: Login EPG ACS User
     When user has entered ACS system URL
 
   Scenario: ACS User Login with valid username and password
-    When user enters "Habtamu" into ACS Username text field
-    And user enters "Habtamu@123" into ACS into password text field
+    When user enters "Belesti1" into ACS Username text field
+    And user enters "Bel@ACS#4" into ACS into password text field
     And user clicks ACS Login button
     Then system displays ACS Admin dashboard
     And ACS user logs out

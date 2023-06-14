@@ -1,5 +1,6 @@
 package pageObj;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -7,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.picocontainer.annotations.Bind;
+
 import java.time.Duration;
 
 public class EPGAdminDashboardPage {
@@ -31,6 +34,15 @@ public class EPGAdminDashboardPage {
     @FindBy(id = "button-1013-btnInnerEl")
     private WebElement linkAdministration;
 
+    @FindBy(id = "button-1058-btnInnerEl")
+    private WebElement jasperReportsMenu;
+
+    @FindBy(id = "button-1066-btnInnerEl")
+    private WebElement bindingsMenu;
+
+    @FindBy(id = "button-1067-btnInnerEl")
+    private WebElement recurrentPaymentsMenu;
+
     @FindBy(id = "button-1044-btnInnerEl")
     private WebElement manualPaymentMOTOLink;
 
@@ -45,6 +57,9 @@ public class EPGAdminDashboardPage {
 
     @FindBy(id = "menuitem-1027-textEl")
     private WebElement groupsMenu;
+
+    @FindBy(id = "menuitem-1064-textEl")
+    private WebElement reportsSubMenu;
 
     @FindBy(id = "menuitem-1039-itemEl")
     private WebElement acquirersMenu;
@@ -74,6 +89,17 @@ public class EPGAdminDashboardPage {
 
     @FindBy(id = "button-1075-btnInnerEl")
     private WebElement logoutButton;
+
+
+    @FindBy(xpath = "//button/span[text()='No']")
+    private WebElement NotUpdatePassword;
+
+    @FindBy(xpath = "//input[@data-qtip='Enter part of name and press Enter']")
+    private WebElement merchantTextField;
+
+    public void clickOnNotUpdatePasswordButton() {
+        this.NotUpdatePassword.click();
+    }
 
     public EPGAdminDashboardPage(WebDriver driver){
         this.driver=driver;
@@ -106,6 +132,21 @@ public class EPGAdminDashboardPage {
         wait.until(ExpectedConditions.visibilityOf(linkAdministration));
         linkAdministration.click();
     }
+    public void clickJasperReportsMenu() {
+        wait.until(ExpectedConditions.visibilityOf(jasperReportsMenu));
+        jasperReportsMenu.click();
+    }
+
+    public void clickBindingsMenu() {
+        wait.until(ExpectedConditions.visibilityOf(bindingsMenu));
+        bindingsMenu.click();
+    }
+
+    public void clickRecurrentPaymentsMenu() {
+        wait.until(ExpectedConditions.visibilityOf(recurrentPaymentsMenu));
+        recurrentPaymentsMenu.click();
+    }
+
     public void clickManualPaymentLink() {
         wait.until(ExpectedConditions.visibilityOf(manualPaymentMOTOLink));
         manualPaymentMOTOLink.click();
@@ -118,6 +159,32 @@ public class EPGAdminDashboardPage {
         wait.until(ExpectedConditions.visibilityOf(linkMerchant));
         linkMerchant.click();
         return new MerchantPage(driver);
+    }
+
+    public JasperReportsPage clickReportsSubMenu() {
+        wait.until(ExpectedConditions.visibilityOf(reportsSubMenu));
+        reportsSubMenu.click();
+        return new JasperReportsPage(driver);
+    }
+
+    public BindingsPage sendKeysToMerchantTextField(String merchantName) {
+        wait.until(ExpectedConditions.visibilityOf(merchantTextField));
+        merchantTextField.clear();
+        merchantTextField.sendKeys(merchantName);
+        merchantTextField.sendKeys(Keys.RETURN);
+
+
+        return new BindingsPage(driver);
+    }
+
+    public RecurrentPaymentsPage sendMerchantToMerchantTextField(String merchantName) {
+        wait.until(ExpectedConditions.visibilityOf(merchantTextField));
+        merchantTextField.clear();
+        merchantTextField.sendKeys(merchantName);
+        merchantTextField.sendKeys(Keys.RETURN);
+
+
+        return new RecurrentPaymentsPage(driver);
     }
 
     public APIUserPage clickAPIUsersMenu() {
