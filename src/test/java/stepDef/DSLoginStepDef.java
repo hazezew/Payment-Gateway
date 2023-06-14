@@ -40,12 +40,25 @@ public class DSLoginStepDef extends AbstractPage {
     @And("DS user clicks DS Login button")
     public void dsUserClicksDSLoginButton() {
         dsAdminDashboardPage = dsLoginPage.clickLoginButton();
-
     }
 
     @Then("system displays DS Admin dashboard")
     public void systemDisplaysDSAdminDashboard() {
         Assert.assertEquals(Config.dsAdminDashboard, dsAdminDashboardPage.getURL());
+    }
 
+    @And("user clicks on DS profile button")
+    public void userClicksOnDSProfileButton() {
+        dsAdminDashboardPage.clickProfileMenu();
+    }
+
+    @And("user clicks on DS Sign-out menu")
+    public void userClicksOnDSSignOutMenu() {
+        dsLoginPage=dsAdminDashboardPage.clickSignOutMenu();
+    }
+
+    @Then("DS system login page")
+    public void dsSystemLoginPage() {
+        Assert.assertEquals(dsLoginPage.getURL(),Config.dsURL);
     }
 }

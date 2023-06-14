@@ -21,6 +21,8 @@ public class DSLoginPage {
     private WebElement passwordTextField;
     @FindBy(xpath = "//button[text()='Login']")
     private WebElement loginButton;
+    @FindBy(xpath = "//div[contains(@class,\"alert-danger\")]")
+    private WebElement messageDisplay;
 
     public DSLoginPage(WebDriver driver) {
         this.driver=driver;
@@ -41,11 +43,14 @@ public class DSLoginPage {
         wait.until(ExpectedConditions.visibilityOf(loginButton));
         loginButton.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         return new DSAdminDashboardPage(driver);
+    }
+    public String getMessageDisplay(){
+        return wait.until(ExpectedConditions.visibilityOf(messageDisplay)).getText();
     }
 
     public String getURL() {

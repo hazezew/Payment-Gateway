@@ -20,3 +20,6 @@ Feature: Login DS User
     And DS user enters "Bel@3ds#" into DS into password text field
     And DS user clicks DS Login button
     Then system displays DS Admin dashboard
+    And user clicks on DS profile button
+    And user clicks on DS Sign-out menu
+    Then DS system login page

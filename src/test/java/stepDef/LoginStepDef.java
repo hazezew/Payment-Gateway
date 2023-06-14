@@ -11,22 +11,23 @@ import org.testng.Assert;
 import pageObj.ACSLoginPage;
 import pageObj.AbstractPage;
 import pageObj.EPGLoginPage;
-//<<<<<<< HEAD
+
 import pageObj.EPGSuperAdminPage;
-//=======
+
 import pageObj.FMLoginPage;
-//>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+
+
 
 public class LoginStepDef extends AbstractPage {
     private WebDriver driver;
     Actions action;
     private EPGLoginPage epgLoginPage;
     private ACSLoginPage acsLoginPage;
-//<<<<<<< HEAD
+
     private EPGSuperAdminPage epgSuperAdminPage;
-//=======
+
     private FMLoginPage fmLoginPage;
-//>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+
 
     public LoginStepDef(){
         this.driver=super.driver;
@@ -140,8 +141,7 @@ public class LoginStepDef extends AbstractPage {
         Assert.assertEquals(acsLoginPage.getURL(),Config.acsURL);
     }
 
-//<<<<<<< HEAD
-//=======
+
     @When("user has entered FM system URL")
     public void userHasEnteredFMSystemURL() {
         driver.get(Config.fMURL);
@@ -202,5 +202,5 @@ public class LoginStepDef extends AbstractPage {
     public void fmLoginPageDisplaysErrorMessageAboutPassword(String emptyPasswordValidationMessage) {
         Assert.assertEquals(fmLoginPage.getEmptyPasswordMessage(),emptyPasswordValidationMessage);
     }
-//>>>>>>> 3154e7be630bbd3ee2fef36bfad699ad210eaed9
+
 }
