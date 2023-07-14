@@ -4,8 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import pageObj.ACSUsersPage;
-import pageObj.APIUserPage;
+import pageObj.acs.ACSUsersPage;
 import pageObj.AbstractPage;
 
 public class ACSUsersStepDef extends AbstractPage {
@@ -16,11 +15,6 @@ public class ACSUsersStepDef extends AbstractPage {
         this.driver = super.driver;
     }
 
-//    @And("EPG user clicks Administration menu")
-//    public void epgUserClicksAdministrationMenu() {
-//        epgAdminDashboardPage.clickLinkAdministration();
-//    }
-//
 
     @And("ACS user clicks on Menu Icon")
     public void acsUserClicksOnMenuIcon() {
@@ -107,7 +101,6 @@ public class ACSUsersStepDef extends AbstractPage {
     @Then("The system should return {string}")
     public void theSystemShouldReturn(String loginName) {
         String returnedUserName = acsUsersPage.searchedUserName();
-        System.out.println(returnedUserName);
         Assert.assertEquals(returnedUserName, loginName);
     }
 
@@ -119,5 +112,51 @@ public class ACSUsersStepDef extends AbstractPage {
     @And("ACS user clicks on the Edit button")
     public void acsUserClicksOnTheEditButton() {
         acsUsersPage.clickOnTheEditButton();
+    }
+
+    @And("ACS user updates user profile")
+    public void acsUserUpdatesUserProfile() {
+        acsUsersPage.updateProfile();
+    }
+
+    @And("ACS user clicks on the Save button")
+    public void acsUserClicksOnTheSaveButton() {
+        acsUsersPage.clickOnSaveButton();
+    }
+
+    @And("ACS user clicks on the Change password button")
+    public void acsUserClicksOnTheChangePasswordButton() {
+        acsUsersPage.clickOnChangePasswordButton();
+    }
+
+    @And("ACS user clicks on the Add Block button")
+    public void acsUserClicksOnTheAddBlockButton() {
+        acsUsersPage.clickOnAddBlockButton();
+    }
+
+    @And("ACS user enters {string} in the start date time field")
+    public void acsUserEntersInTheStartDateTimeField(String startDateTime) {
+        acsUsersPage.setStartDateTime(startDateTime);
+    }
+
+    @And("ACS user enters {string} in the end date time field")
+    public void acsUserEntersInTheEndDateTimeField(String endDateTime) {
+        acsUsersPage.setEndDateTime(endDateTime);
+    }
+
+    @And("ACS user enters {string} in the comments text area")
+    public void acsUserEntersInTheCommentsTextArea(String comment) {
+        acsUsersPage.setComment(comment);
+    }
+
+    @And("ACS user clicks on the Add or save block button")
+    public void acsUserClicksOnTheAddOrSaveBlockButton() {
+        acsUsersPage.clickOnSaveBlockButton();
+    }
+
+    @Then("ACS user would be blocked by the system and get {string} in the comment column")
+    public void acsUserWouldBeBlockedByTheSystemAndGetInTheCommentColumn(String expectedReason) {
+        String actualReason = acsUsersPage.getReasonForBlockingUser();
+        Assert.assertEquals(actualReason, expectedReason);
     }
 }

@@ -27,7 +27,7 @@ public class Config {
     public static String refundPageURL="https://192.168.20.45:7045/epg_gui/#refunds";
     public static String auditPageURL="https://192.168.20.45:7045/epg_gui/#useractions";
 
-    public static String acsAdminDashboard="https://192.168.20.45:7111/acsconsole/";
+    public static String acsAdminDashboard="https://192.168.20.45:7111/acsconsole/pages/home.xhtml";
 
     public static String merchantPageURL="https://192.168.20.45:7045/epg_gui/#merchants";
     public static String usersPageInEPGSuperAdminURL = "https://192.168.20.45:7045/epg_gui/#users";

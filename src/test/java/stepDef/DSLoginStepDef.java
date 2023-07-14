@@ -6,9 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import pageObj.ACSLoginPage;
 import pageObj.AbstractPage;
-import pageObj.DSAdminDashboardPage;
 import pageObj.DSLoginPage;
 
 public class DSLoginStepDef extends AbstractPage {

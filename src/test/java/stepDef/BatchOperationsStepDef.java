@@ -47,4 +47,5 @@ public class BatchOperationsStepDef extends AbstractPage {
     public void epgUserSelectsOnMerchantTextfield(String merchantName) {
         batchOperationsPage.setMerchant(merchantName);
     }
+
 }
