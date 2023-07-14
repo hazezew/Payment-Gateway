@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="abfb17f8-1a36-4812-956b-d6d870665408" name="Changes" comment="">
 <<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/autoit/FileUpload.exe" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/pageObj/ACSUsersPage.java" afterDir="false" />
@@ -174,6 +181,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/resources/merchant.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/merchant.feature" afterDir="false" />
 >>>>>>> 0987660a92f7396ae6f0d28b8c7e431ee21b8062
       <change beforePath="$PROJECT_DIR$/src/test/webDrivers/WIN/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/webDrivers/WIN/chromedriver.exe" afterDir="false" />
+>>>>>>> 18f030f68fe1df924f2284a9ed94c59e7c0d9d44
       <change beforePath="$PROJECT_DIR$/target/Extent/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Extent/ExtentReport.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
