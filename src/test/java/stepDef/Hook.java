@@ -11,6 +11,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -53,6 +55,9 @@ public class Hook {
 //                    FirefoxOptions firefoxOptions = new FirefoxOptions();
 //                    firefoxOptions.setBinary(firefoxBinary);
 //                    driver = new FirefoxDriver(firefoxOptions);
+                } else if (Config.browser.equalsIgnoreCase("edge")) {
+                    System.setProperty("webdriver.edge.driver", ".\\src\\test\\webDrivers\\WIN\\msedgedriver.exe");
+                    driver = new EdgeDriver();
                 }
             } else {
                 if (Config.browser.equalsIgnoreCase("firefox")) {
@@ -69,6 +74,13 @@ public class Hook {
                     options.addArguments("--headless");
                     options.addArguments("--no-sandbox");
                     driver = new ChromeDriver(options);
+                } else if (Config.browser.equalsIgnoreCase("edge")) {
+                    System.setProperty("webdriver.edge.driver", ".\\src\\test\\webDrivers\\WIN\\msedgedriver.exe");
+                    EdgeOptions options = new EdgeOptions();
+                    options.addArguments("--headless", "--window-size=1920,1200","--ignore-certificate-errors");
+                    options.addArguments("--headless");
+                    options.addArguments("--no-sandbox");
+                    driver = new EdgeDriver(options);
                 }
             }
             driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

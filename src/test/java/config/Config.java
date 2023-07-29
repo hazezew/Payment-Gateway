@@ -1,7 +1,7 @@
 package config;
 
 public class Config {
-    public static final String browser="chrome"; // chrome, firefox
+    public static final String browser="edge"; // chrome, firefox
     public static String epgURL="https://192.168.20.45:7045/epg_gui/";
 //    public static String epgLoutLoginURL="https://192.168.20.45:7045/epg_gui/#login";
     public static String acsURL="https://192.168.20.45:7111/acsconsole/login.xhtml";
@@ -35,8 +35,8 @@ public class Config {
     public static String acquirerName = "acquirerauto7";
 
     // DS
-    public static String dsURL = "http://192.168.20.45:7051/en/#/login";
-    public static String dsAdminDashboard = "http://192.168.20.45:7051/en/#/admin/threeds1transaction";
+    public static String dsURL = "https://192.168.20.45:7051/en/#/login";
+    public static String dsAdminDashboard = "https://192.168.20.45:7051/en/#/admin/threeds1transaction";
 
 
 
